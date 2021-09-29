@@ -19,7 +19,8 @@ services:
     image: wordpress:latest
     container_name: wp
     ports:
-      - '${PORT:-8000}:80'
+      - '${PORT}:80'
+      - '8000:80'
     volumes: ['./html:/var/www/html', './upload.ini:/usr/local/etc/php/conf.d/uploads.ini']
     restart: always
     environment:
