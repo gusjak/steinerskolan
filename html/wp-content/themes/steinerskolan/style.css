@@ -1,0 +1,45 @@
+/*
+Theme Name: Steinerskolan
+Theme URI:
+Author: Jakob Gustafsson/Jonathan Larsson
+Author URI:
+Description: A portfolio theme for Rudolf Steinerskolan
+Version: 1.0
+*/
+
+@font-face {
+  font-family: IBMPlexSans;
+  src: url('./assets/fonts/woff2/IBMPlexSans-Regular.woff2') format('woff2'),
+    url('./assets/fonts/woff/IBMPlexSans-Regular.woff') format('woff');
+}
+
+@font-face {
+  font-family: IBMPlexSans;
+  src: url('./assets/fonts/woff2/IBMPlexSans-Bold.woff2') format('woff2'),
+    url('path-to-lato-bold.woff') format('woff');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: IBMPlexSanst;
+  src: url('./assets/fonts/woff2/IBMPlexSans-Light.woff2') format('woff2'),
+    url('./assets/fonts/woff/IBMPlexSans-Light.woff') format('woff');
+  font-weight: 300;
+}
+
+@font-face {
+  font-family: IBMPlexSans;
+  src: url('./assets/fonts/woff2/IBMPlexSans-Medium.woff2') format('woff2'),
+    url('./assets/fonts/woff/IBMPlexSans-Medium.woff') format('woff');
+  font-weight: 500;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'IBMPlexSans';
+}
