@@ -1,0 +1,19 @@
+.title-404 {
+  font-size: 100px;
+  font-weight: 700;
+}
+
+.text-404 {
+  font-size: 24px;
+}
+
+.link-404 {
+  color: cornflowerblue;
+  font-weight: 700;
+  text-decoration: none;
+}
+
+.link-404:hover {
+  cursor: pointer;
+  border-bottom: 1px solid black;
+}
