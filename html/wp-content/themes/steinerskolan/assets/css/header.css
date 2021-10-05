@@ -6,15 +6,10 @@ nav {
   border-bottom: 1px solid black;
 }
 
-.site-logo {
+.logo {
   height: 50px;
   padding-left: 25px;
 }
-
-/* .expandDown {
-    height: 12px;
-    width: 12px;
-  } */
 
 ul {
   width: 1440px;
@@ -26,22 +21,28 @@ ul {
   align-items: center;
   justify-content: flex-end;
 }
-li {
-  margin-left: 20px;
-  color: black;
-}
 
-li:hover {
-  cursor: pointer;
-  border-bottom: 1px solid black;
+.list-item {
+  margin-left: 20px;
 }
 
 a {
   text-decoration: none;
+  color: black;
+  cursor: pointer;
+}
+
+a:hover {
+  border-bottom: 1px solid black;
+}
+
+a:visited {
+  text-decoration: none;
 }
 
 .active {
-  font-weight: 700;
+  font-weight: 600;
+  border-bottom: 1px solid black;
 }
 
 .apply {
@@ -69,8 +70,6 @@ a {
   border-bottom: 2px solid black;
 }
 
-section {
-  margin-top: 100px;
-  padding-left: 100px;
-  padding-right: 100px;
+.loading {
+  transition: none;
 }

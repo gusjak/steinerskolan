@@ -1,6 +1,5 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const button = document.getElementById("btn");
-      button.addEventListener("click", function () {
-        alert("the button was clicked!");
-      });
-  });
+const button = document.getElementById('button');
+
+button.addEventListener('click', () => {
+    alert('button clicked');
+})

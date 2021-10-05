@@ -11,26 +11,37 @@
 <body <?php body_class(); ?>>
   <?php wp_body_open(); ?>
 
-  <?php $menuItems = wp_get_nav_menu_items('menu'); ?>
+  <?php $menuItems = wp_get_nav_menu_items('Primary'); ?>
 
   <header>
     <nav>
       <?php if (has_custom_logo()) : ?>
-        <div class="site-logo"><?php the_custom_logo(); ?></div>
+        <div class="logo"><?php the_custom_logo(); ?></div>
       <?php else : ?>
-        <a class="navbar-brand" href="<?= site_url(); ?>"> <?php bloginfo('name'); ?></a>
+        <a href="<?php echo site_url(); ?>"> <?php bloginfo('name'); ?></a>
       <?php endif; ?>
       <ul class="menu">
-        <?php
-        $currentPageId = $wp_query->queried_object_id;
+        <?php $currentPageId = $wp_query->queried_object_id;
         foreach ($menuItems as $item) : ?>
-          <a class="<?php echo $item->object_id == $currentPageId ? ' active' : '' ?>" href="<?php echo $item->url; ?>">
-            <li class="list-item">
+          <li class="list-item">
+            <a class="<?php echo $item->object_id == $currentPageId ? ' active' : '' ?>" href="<?php echo $item->url; ?>">
               <?php echo $item->title; ?>
-            </li>
-          </a>
+            </a>
+            <?php if ($item->children > 0) : ?>
+              <ul class="menu">
+                <?php foreach ($item->children as $childItem) : ?>
+                  <li class="list-item">
+                    <a class="<?php echo $childItem->object_id == $currentPageId ? ' active' : '' ?>" href="<?php echo $childItem->url; ?>">
+                      <?php echo $childItem->title; ?>
+                    </a>
+                  </li>
+                <?php endforeach; ?>
+              </ul>
+            <?php endif; ?>
+          </li>
         <?php endforeach; ?>
-        <button class="apply" id="btn">Ansök</button>
+        <button class="apply" id="button">Ansök</button>
       </ul>
     </nav>
   </header>
+  <main>
