@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html <?php language_attributes(); ?>>
+
+<head>
+    <meta charset="<?php bloginfo('charset'); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <?php wp_head(); ?>
+</head>
+
+<body <?php body_class('body'); ?>>
+    <?php wp_body_open(); ?>
+
+    <?php $menuItems = get_menu('header-menu'); ?>
+
+    <header>
+
+        <?php if (has_custom_logo()) : ?>
+            <div><?php the_custom_logo(); ?></div>
+        <?php else : ?>
+            <a href="<?= site_url(); ?>"> <?php bloginfo('name'); ?></a>
+        <?php endif; ?>
+
+        <nav class="nav-menu">
+            <ul class="menu">
+                <?php $currentPageId = $wp_query->queried_object_id; ?>
+                <?php foreach ($menuItems as $menuItem) : ?>
+                    <?php if (sizeof($menuItem->children) === 0) : ?>
+                        <!-- Single -->
+                        <li class="menu-item">
+                            <a class="nav-link<?= $menuItem->object_id == $currentPageId ? ' active' : '' ?>" href="<?= $menuItem->url; ?>">
+                                <?= $menuItem->title; ?>
+                            </a>
+                        </li>
+                    <?php else : ?>
+                        <!-- Parent -->
+                        <div>
+                            <li class="menu-item menu-item-has-children">
+                                <a class="nav-link<?= $menuItem->object_id == $currentPageId ? ' active' : '' ?>" href="<?= $menuItem->url; ?>">
+                                    <?= $menuItem->title; ?>
+                                </a>
+                                <svg class="plus" width="20" height="20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M3.333 7.5 10 14.167 16.667 7.5" stroke="#000" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                </svg>
+                            </li>
+                            <ul class="sub-menu">
+                                <?php foreach ($menuItem->children as $childItem) : ?>
+                                    <!-- Children -->
+                                    <li class="menu-item">
+                                        <a class="nav-link<?= $childItem->object_id == $currentPageId ? ' active' : '' ?>" href="<?= $childItem->url ?>">
+                                            <?= $childItem->title; ?>
+                                        </a>
+                                    </li>
+                                <?php endforeach; ?>
+                            </ul>
+                        </div>
+                    <?php endif; ?>
+                <?php endforeach; ?>
+                <button class="apply" id="button">Ansök</button>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
