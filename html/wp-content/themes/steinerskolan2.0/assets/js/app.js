@@ -8,7 +8,7 @@ navMenu.addEventListener("click", (e) => {
     if(e.target.hasAttribute("data-toggle") && 
         window.innerWidth <= mediaSize){
         // Prevent default behaviour on parent link in mobile
-        e.preDefault();
+        e.preventDefault();
         
         const menuItemHasChildren = e.target.parentElement;
         
