@@ -27,7 +27,8 @@ add_action('after_setup_theme', function () {
 add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('style', get_stylesheet_uri());
     wp_enqueue_style('header', get_template_directory_uri() . '/assets/css/header.css', true, '1.1', 'all');
-    wp_enqueue_script('app', get_template_directory_uri() . '/assets/js/app.js', '', '', true);
+
+    wp_enqueue_script('header', get_template_directory_uri() . '/assets/js/header.js', '', '', true);
 });
 
 

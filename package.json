@@ -1,0 +1,8 @@
+{
+  "devDependencies": {
+    "@wordpress/scripts": "^18.0.1"
+  },
+  "dependencies": {
+    "@wordpress/create-block": "^2.5.1"
+  }
+}
