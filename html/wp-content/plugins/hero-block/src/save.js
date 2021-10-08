@@ -11,7 +11,7 @@ import { __ } from '@wordpress/i18n';
  *
  * @see https://developer.wordpress.org/block-editor/packages/packages-block-editor/#useBlockProps
  */
-import { useBlockProps, RichText } from '@wordpress/block-editor';
+import { useBlockProps, InnerBlocks } from '@wordpress/block-editor';
 
 /**
  * The save function defines the way in which the different attributes should
@@ -22,13 +22,10 @@ import { useBlockProps, RichText } from '@wordpress/block-editor';
  *
  * @return {WPElement} Element to render.
  */
-export default function save({ attributes }) {
-	const { title, text } = attributes;
-
+export default function save() {
 	return (
-		<div { ...useBlockProps.save() }>
-			<h1 className="hero-title">{title}</h1>
-			<RichText.Content tagName="p" value={text} className="hero-text" />
+		<div {...useBlockProps.save()}>
+			<InnerBlocks.Content />
 		</div>
 	);
 }

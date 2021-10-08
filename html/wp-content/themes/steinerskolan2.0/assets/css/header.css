@@ -1,7 +1,8 @@
 header {
   top: 0;
   width: 100%;
-  padding: 1.5rem 2rem;
+  padding: 0 2rem;
+  height: 10vh;
   position: sticky;
   display: flex;
   justify-content: space-between;

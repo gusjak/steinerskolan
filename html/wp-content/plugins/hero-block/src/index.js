@@ -12,7 +12,7 @@ import { registerBlockType } from '@wordpress/blocks';
  *
  * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
  */
-import './style.css';
+import './style.scss';
 
 /**
  * Internal dependencies
@@ -27,10 +27,15 @@ import save from './save';
  */
 registerBlockType( 'create-block/hero-block', {
 	attributes: {
-		title: {
+		top_hero_title: {
 			type: "string",
 			source: "html",
 			selector: "h1",
+		},
+		bottom_hero_title: {
+			type: "string",
+			source: "html",
+			selector: "h2",
 		},
 		text: {
 			type: "string",

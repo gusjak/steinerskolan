@@ -11,7 +11,7 @@ import { __ } from '@wordpress/i18n';
  *
  * @see https://developer.wordpress.org/block-editor/packages/packages-block-editor/#useBlockProps
  */
-import { useBlockProps, RichText } from '@wordpress/block-editor';
+import { useBlockProps, InnerBlocks } from '@wordpress/block-editor';
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -19,7 +19,7 @@ import { useBlockProps, RichText } from '@wordpress/block-editor';
  *
  * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
  */
-import './editor.css';
+import './editor.scss';
 
 /**
  * The edit function describes the structure of your block in the context of the
@@ -29,36 +29,16 @@ import './editor.css';
  *
  * @return {WPElement} Element to render.
  */
-export default function Edit({ attributes, setAttributes }) {
-
-	const { title, text } = attributes;
-
-	function changeTitle(newTitle) {
-		setAttributes({ title: newTitle });
-	}
-
-	function changeText(newText) {
-		setAttributes({ text: newText });
-	}
-
+export default function Edit() {
+	const HERO_TEMPLATE = [
+		["core/heading", { placeholder: "Top Hero Title", className: "top-hero-title" }],
+		["core/heading", { placeholder: "Bottom Hero Title", className: "bottom-hero-title" }],
+		["core/paragraph", { placeholder: "Hero Text", className: "hero-text" }],
+		["core/button", { placeholder: "Button text", className: "hero-button" }],
+	];
 	return (
-		<div {...useBlockProps}>
-			<RichText
-				key="editable"
-				tagName="h1"
-				placeholder="Hero Titel"
-				value={title}
-				onChange={changeTitle}
-				className="hero-title"
-			/>
-			<RichText
-				key="editable"
-				tagName="p"
-				placeholder="Hero text"
-				value={text}
-				onChange={changeText}
-				className="hero-text"
-			/>
+		<div {...useBlockProps()}>
+			<InnerBlocks template={HERO_TEMPLATE} />
 		</div>
 	);
 }
