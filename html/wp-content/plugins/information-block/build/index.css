@@ -7,7 +7,116 @@
  * Replace them with your own styles or remove the file completely.
  */
 .wp-block-create-block-information-block {
-  border: 1px dotted #f00;
+  height: 130vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f7f6f0;
+}
+.wp-block-create-block-information-block .box-container {
+  background-color: #f7f6f0;
+}
+.wp-block-create-block-information-block .info-text {
+  text-align: center;
+}
+.wp-block-create-block-information-block .box-group-1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.wp-block-create-block-information-block .box-1,
+.wp-block-create-block-information-block .box-2,
+.wp-block-create-block-information-block .box-3,
+.wp-block-create-block-information-block .box-4,
+.wp-block-create-block-information-block .box-5,
+.wp-block-create-block-information-block .box-6 {
+  background-color: white;
+}
+.wp-block-create-block-information-block .box-1 {
+  border: 1px solid black;
+  width: 300px;
+  height: 300px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wp-block-create-block-information-block .box-2 {
+  border: 1px solid black;
+  width: 300px;
+  height: 300px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.wp-block-create-block-information-block .info-text {
+  font-style: normal;
+  padding: 30px;
+}
+.wp-block-create-block-information-block .box-group-2 {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.wp-block-create-block-information-block .box-3 {
+  border: 1px solid black;
+  width: 300px;
+  height: 300px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.wp-block-create-block-information-block .box-4 {
+  border: 1px solid black;
+  width: 300px;
+  height: 300px;
+  left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wp-block-create-block-information-block .box-group-3 {
+  display: flex;
+  flex-direction: row;
+  max-width: 100%;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.wp-block-create-block-information-block .box-5 {
+  border: 1px solid black;
+  width: 0;
+  height: 300px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wp-block-create-block-information-block .box-6 {
+  border: 1px solid black;
+  width: 300px;
+  height: 300px;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.wp-block-create-block-information-block .wp-block-image {
+  margin: 0;
+}
+.wp-block-create-block-information-block .block-editor-inner-blocks img {
+  width: 300px;
+  height: 300px;
 }
 
 /*# sourceMappingURL=index.css.map*/

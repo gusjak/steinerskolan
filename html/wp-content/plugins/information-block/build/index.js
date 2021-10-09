@@ -52,8 +52,77 @@ __webpack_require__.r(__webpack_exports__);
  * @return {WPElement} Element to render.
  */
 
+["core/image", {
+  placeholder: "Gallery Image 1",
+  className: "gallery-image-1"
+}][("core/heading", {
+  placeholder: "Top Hero Title",
+  className: "top-hero-title"
+})], ["core/paragraph", {
+  placeholder: "Hero Text",
+  className: "hero-text"
+}], ["core/button", {
+  placeholder: "Button text",
+  className: "hero-button"
+}];
 function Edit() {
-  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)(), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Information Block – hello from the editor!', 'information-block'));
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InnerBlocks, {
+    template: [['core/heading', {
+      level: 2,
+      placeholder: 'Information Title',
+      className: 'info-title'
+    }], ['core/column', {
+      className: 'box-container'
+    }, [['core/columns', {
+      className: 'box-group-1'
+    }, [['core/column', {
+      className: 'box-1'
+    }, [['core/image', {
+      level: 3,
+      placeholder: 'Information Image 1'
+    }]]], ['core/column', {
+      className: 'box-2'
+    }, [['core/paragraph', {
+      level: 3,
+      placeholder: 'Information Text 1',
+      className: 'box-text'
+    }], ['core/button', {
+      placeholder: 'Button Text',
+      className: 'read-more-button'
+    }]]]]], ['core/columns', {
+      className: 'box-group-2'
+    }, [['core/column', {
+      className: 'box-3'
+    }, [['core/paragraph', {
+      level: 3,
+      placeholder: 'Information Text 2',
+      className: 'box-text'
+    }], ['core/button', {
+      placeholder: 'Button Text',
+      className: 'read-more-button'
+    }]]], ['core/column', {
+      className: 'box-4'
+    }, [['core/image', {
+      level: 3,
+      placeholder: 'Information Image 2'
+    }]]]]], ['core/columns', {
+      className: 'box-group-3'
+    }, [['core/column', {
+      className: 'box-5'
+    }, [['core/image', {
+      level: 3,
+      placeholder: 'Information Image 3'
+    }]]], ['core/column', {
+      className: 'box-6'
+    }, [['core/paragraph', {
+      level: 3,
+      placeholder: 'Information Text 3',
+      className: 'box-text'
+    }], ['core/button', {
+      placeholder: 'Button Text',
+      className: 'read-more-button'
+    }]]]]]]]]
+  }));
 }
 
 /***/ }),
@@ -154,7 +223,7 @@ __webpack_require__.r(__webpack_exports__);
  */
 
 function save() {
-  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps.save(), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Information Block – hello from the saved content!', 'information-block'));
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps.save(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InnerBlocks.Content, null));
 }
 
 /***/ }),

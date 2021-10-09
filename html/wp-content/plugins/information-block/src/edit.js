@@ -11,7 +11,7 @@ import { __ } from '@wordpress/i18n';
  *
  * @see https://developer.wordpress.org/block-editor/packages/packages-block-editor/#useBlockProps
  */
-import { useBlockProps } from '@wordpress/block-editor';
+import { useBlockProps, InnerBlocks } from '@wordpress/block-editor';
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -29,13 +29,63 @@ import './editor.scss';
  *
  * @return {WPElement} Element to render.
  */
-export default function Edit() {
+
+ ["core/image", { placeholder: "Gallery Image 1", className: "gallery-image-1" }]
+ ["core/heading", { placeholder: "Top Hero Title", className: "top-hero-title" }],
+ ["core/paragraph", { placeholder: "Hero Text", className: "hero-text" }],
+ ["core/button", { placeholder: "Button text", className: "hero-button" }]
+
+ export default function Edit() {
 	return (
-		<p { ...useBlockProps() }>
-			{ __(
-				'Information Block – hello from the editor!',
-				'information-block'
-			) }
-		</p>
+		<div { ...useBlockProps() }>
+			<InnerBlocks
+				template={ [
+					[ 'core/heading', { level: 2, placeholder: 'Information Title', className: 'info-title' } ],
+					[ 'core/column', { className: 'box-container' },
+					[
+					[ 'core/columns', { className: 'box-group-1' },
+						[
+							[ 'core/column', { className: 'box-1'}, [
+									[ 'core/image', { level: 3, placeholder: 'Information Image 1' } ],
+								]
+							],
+							[ 'core/column', { className: 'box-2'}, [
+									[ 'core/paragraph', { level: 3, placeholder: 'Information Text 1', className: 'box-text' } ],
+									[ 'core/button', { placeholder: 'Button Text', className: 'read-more-button' } ],
+								]
+							],
+						]
+					],
+					[ 'core/columns', { className: 'box-group-2' },
+					[
+						[ 'core/column', { className: 'box-3'}, [
+							[ 'core/paragraph', { level: 3, placeholder: 'Information Text 2', className: 'box-text' } ],
+							[ 'core/button', { placeholder: 'Button Text', className: 'read-more-button' } ],
+						]
+					],
+						[ 'core/column', { className: 'box-4'}, [
+								[ 'core/image', { level: 3, placeholder: 'Information Image 2' } ],
+							]
+						],
+					]
+					],
+					[ 'core/columns', { className: 'box-group-3' },
+					[
+						[ 'core/column', { className: 'box-5'}, [
+								[ 'core/image', { level: 3, placeholder: 'Information Image 3' } ],
+							]
+						],
+						[ 'core/column', { className: 'box-6'}, [
+								[ 'core/paragraph', { level: 3, placeholder: 'Information Text 3', className: 'box-text' } ],
+								[ 'core/button', { placeholder: 'Button Text', className: 'read-more-button' } ],
+							]
+						],
+					]
+					],
+				]
+			],
+				] }
+			/>
+		</div>
 	);
 }
