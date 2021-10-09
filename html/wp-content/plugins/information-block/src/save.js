@@ -22,11 +22,13 @@ import { useBlockProps } from '@wordpress/block-editor';
  *
  * @return {WPElement} Element to render.
  */
-export default function save({ attributes }) {
-	const { title } = attributes;
+export default function save() {
 	return (
-		<div {...useBlockProps.save()}>
-			<h1>{title}</h1>
-		</div>
+		<p { ...useBlockProps.save() }>
+			{ __(
+				'Information Block – hello from the saved content!',
+				'information-block'
+			) }
+		</p>
 	);
 }

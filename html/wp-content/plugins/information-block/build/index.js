@@ -52,27 +52,8 @@ __webpack_require__.r(__webpack_exports__);
  * @return {WPElement} Element to render.
  */
 
-function Edit({
-  attributes,
-  setAttributes
-}) {
-  const {
-    title
-  } = attributes;
-
-  function changeTitle(newTitle) {
-    setAttributes({
-      title: newTitle
-    });
-  }
-
-  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
-    key: "editable",
-    tagName: "h2",
-    placeholder: "Title",
-    value: title,
-    onChange: changeTitle
-  }));
+function Edit() {
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)(), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Information Block – hello from the editor!', 'information-block'));
 }
 
 /***/ }),
@@ -116,15 +97,7 @@ __webpack_require__.r(__webpack_exports__);
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
 
-(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)('create-block/grid-block', {
-  attributes: {
-    title: {
-      type: "string",
-      source: "html",
-      selector: "h2"
-    }
-  },
-
+(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)('create-block/information-block', {
   /**
    * @see ./edit.js
    */
@@ -180,13 +153,8 @@ __webpack_require__.r(__webpack_exports__);
  * @return {WPElement} Element to render.
  */
 
-function save({
-  attributes
-}) {
-  const {
-    title
-  } = attributes;
-  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps.save(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h1", null, title));
+function save() {
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps.save(), (0,_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__.__)('Information Block – hello from the saved content!', 'information-block'));
 }
 
 /***/ }),
@@ -410,7 +378,7 @@ module.exports = window["wp"]["i18n"];
 /******/ 			return __webpack_require__.O(result);
 /******/ 		}
 /******/ 		
-/******/ 		var chunkLoadingGlobal = self["webpackChunkgrid_block"] = self["webpackChunkgrid_block"] || [];
+/******/ 		var chunkLoadingGlobal = self["webpackChunkinformation_block"] = self["webpackChunkinformation_block"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	}();

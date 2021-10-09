@@ -25,14 +25,7 @@ import save from './save';
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
-registerBlockType( 'create-block/grid-block', {
-	attributes: {
-		title: {
-			type: "string",
-			source: "html",
-			selector: "h2",
-		}
-	},
+registerBlockType( 'create-block/information-block', {
 	/**
 	 * @see ./edit.js
 	 */
