@@ -3,7 +3,7 @@
  *
  * @see https://developer.wordpress.org/block-editor/packages/packages-i18n/
  */
-import { __ } from '@wordpress/i18n';
+import { __ } from "@wordpress/i18n";
 
 /**
  * React hook that is used to mark the block wrapper element.
@@ -11,7 +11,7 @@ import { __ } from '@wordpress/i18n';
  *
  * @see https://developer.wordpress.org/block-editor/packages/packages-block-editor/#useBlockProps
  */
-import { useBlockProps,	RichText } from '@wordpress/block-editor';
+import { useBlockProps, RichText } from "@wordpress/block-editor";
 import { Button } from "@wordpress/components";
 
 /**
@@ -20,7 +20,7 @@ import { Button } from "@wordpress/components";
  *
  * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
  */
-import './editor.scss';
+import "./editor.scss";
 
 /**
  * The edit function describes the structure of your block in the context of the
@@ -31,57 +31,57 @@ import './editor.scss';
  * @return {WPElement} Element to render.
  */
 export default function Edit({ attributes, setAttributes }) {
-			const { topTitle, bottomTitle, body, buttonText } = attributes;
+	const { topTitle, bottomTitle, body, buttonText } = attributes;
 
-			function onChangeTopTitle(newTopTitle) {
-				setAttributes({ topTitle: newTopTitle });
-			}
-			function onChangeBottomTitle(newBottomTitle) {
-				setAttributes({ bottomTitle: newBottomTitle });
-			}
-		
-			function onChangeBody(newBody) {
-				setAttributes({ body: newBody });
-			}
+	function onChangeTopTitle(newTopTitle) {
+		setAttributes({ topTitle: newTopTitle });
+	}
+	function onChangeBottomTitle(newBottomTitle) {
+		setAttributes({ bottomTitle: newBottomTitle });
+	}
 
-			function onChangeButtonText(newButtonText) {
-				setAttributes({ buttonText: newButtonText });
-			}
+	function onChangeBody(newBody) {
+		setAttributes({ body: newBody });
+	}
+
+	function onChangeButtonText(newButtonText) {
+		setAttributes({ buttonText: newButtonText });
+	}
 
 	return (
-<div {...useBlockProps()}>
-				<RichText
-					key="editable"
-					tagname="h1"
-					placeholder="Top Title"
-					value={topTitle}
-					onChange={onChangeTopTitle}
-					className="hero-top-title"
-				/>
-				<RichText
-					key="editable"
-					tagname="h2"
-					placeholder="Bottom Title"
-					value={bottomTitle}
-					onChange={onChangeBottomTitle}
-					className="hero-bottom-title"
-				/>
-				<RichText
-					key="editable"
-					tagname="p"
-					placeholder="Text"
-					value={body}
-					onChange={onChangeBody}
-					className="hero-text"
-				/>
-				<RichText
-					key="editable"
-					tagname="button"
-					placeholder="Button Text"
-					value={buttonText}
-					onChange={onChangeButtonText}
-					className="apply"
-				/>
-			</div>
+		<div {...useBlockProps()}>
+			<RichText
+				key="editable"
+				tagname="h1"
+				placeholder="Top Title"
+				value={topTitle}
+				onChange={onChangeTopTitle}
+				className="hero-top-title"
+			/>
+			<RichText
+				key="editable"
+				tagname="h2"
+				placeholder="Bottom Title"
+				value={bottomTitle}
+				onChange={onChangeBottomTitle}
+				className="hero-bottom-title"
+			/>
+			<RichText
+				key="editable"
+				tagname="p"
+				placeholder="Text"
+				value={body}
+				onChange={onChangeBody}
+				className="hero-text"
+			/>
+			<RichText
+				key="editable"
+				tagname="button"
+				placeholder="Button Text"
+				value={buttonText}
+				onChange={onChangeButtonText}
+				className="apply"
+			/>
+		</div>
 	);
 }

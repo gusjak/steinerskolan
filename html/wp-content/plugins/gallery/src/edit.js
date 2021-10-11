@@ -3,7 +3,7 @@
  *
  * @see https://developer.wordpress.org/block-editor/packages/packages-i18n/
  */
-import { __ } from '@wordpress/i18n';
+import { __ } from "@wordpress/i18n";
 
 /**
  * React hook that is used to mark the block wrapper element.
@@ -11,7 +11,7 @@ import { __ } from '@wordpress/i18n';
  *
  * @see https://developer.wordpress.org/block-editor/packages/packages-block-editor/#useBlockProps
  */
-import { useBlockProps, MediaUpload } from '@wordpress/block-editor';
+import { useBlockProps, MediaUpload } from "@wordpress/block-editor";
 import { Button } from "@wordpress/components";
 
 /**
@@ -20,7 +20,7 @@ import { Button } from "@wordpress/components";
  *
  * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
  */
-import './editor.scss';
+import "./editor.scss";
 
 /**
  * The edit function describes the structure of your block in the context of the
@@ -91,32 +91,32 @@ export default function Edit({ attributes, setAttributes }) {
 		}
 	};
 	return (
-		<div { ...useBlockProps() }>
+		<div {...useBlockProps()}>
 			<MediaUpload
-			onSelect={(media) => {
-				setAttributes({ imageAltOne: media.alt, imageUrlOne: media.url });
-			}}
-			type="image"
-			value={attributes.imageID}
-			render={({ open }) => getImageButtonOne(open)}
+				onSelect={(media) => {
+					setAttributes({ imageAltOne: media.alt, imageUrlOne: media.url });
+				}}
+				type="image"
+				value={attributes.imageID}
+				render={({ open }) => getImageButtonOne(open)}
 			/>
 
 			<MediaUpload
-			onSelect={(media) => {
-				setAttributes({ imageAltTwo: media.alt, imageUrlTwo: media.url });
-			}}
-			type="image"
-			value={attributes.imageID}
-			render={({ open }) => getImageButtonTwo(open)}
+				onSelect={(media) => {
+					setAttributes({ imageAltTwo: media.alt, imageUrlTwo: media.url });
+				}}
+				type="image"
+				value={attributes.imageID}
+				render={({ open }) => getImageButtonTwo(open)}
 			/>
 
 			<MediaUpload
-			onSelect={(media) => {
-				setAttributes({ imageAltThree: media.alt, imageUrlThree: media.url });
-			}}
-			type="image"
-			value={attributes.imageID}
-			render={({ open }) => getImageButtonThree(open)}
+				onSelect={(media) => {
+					setAttributes({ imageAltThree: media.alt, imageUrlThree: media.url });
+				}}
+				type="image"
+				value={attributes.imageID}
+				render={({ open }) => getImageButtonThree(open)}
 			/>
 		</div>
 	);

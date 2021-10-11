@@ -1,0 +1,16 @@
+{
+	"apiVersion": 2,
+	"name": "create-block/grid",
+	"version": "0.1.0",
+	"title": "Grid",
+	"category": "widgets",
+	"icon": "heart",
+	"description": "Example block written with ESNext standard and JSX support – build step required.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "grid",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}

@@ -42,5 +42,11 @@ $black: #262526;
 
 	img {
 		object-fit: contain;
+		transition: 0.2s ease-in-out;
+	}
+
+	img:hover {
+		transform: scale(1.1);
+		cursor: pointer;
 	}
 }
