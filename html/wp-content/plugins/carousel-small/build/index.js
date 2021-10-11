@@ -380,7 +380,7 @@ function save({
 
     if (altOne) {
       return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-        className: "gallery-image-1",
+        className: "teacher-image-1",
         src: srcOne,
         alt: altOne
       });
@@ -388,7 +388,7 @@ function save({
 
 
     return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-      className: "gallery-image-1",
+      className: "teacher-image-1",
       src: srcOne,
       alt: "",
       "aria-hidden": "true"
@@ -400,7 +400,7 @@ function save({
 
     if (altTwo) {
       return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-        className: "gallery-image-2",
+        className: "teacher-image-2",
         src: srcTwo,
         alt: altTwo
       });
@@ -408,7 +408,7 @@ function save({
 
 
     return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-      className: "gallery-image-2",
+      className: "teacher-image-2",
       src: srcTwo,
       alt: "",
       "aria-hidden": "true"
@@ -420,7 +420,7 @@ function save({
 
     if (altThree) {
       return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-        className: "gallery-image-3",
+        className: "teacher-image-3",
         src: srcThree,
         alt: altThree
       });
@@ -428,7 +428,7 @@ function save({
 
 
     return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-      className: "gallery-image-3",
+      className: "teacher-image-3",
       src: srcThree,
       alt: "",
       "aria-hidden": "true"

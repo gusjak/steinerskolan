@@ -27,12 +27,12 @@ export default function save({ attributes }) {
 		if (!srcOne) return null;
 
 		if (altOne) {
-			return <img className="gallery-image-1" src={srcOne} alt={altOne} />;
+			return <img className="teacher-image-1" src={srcOne} alt={altOne} />;
 		}
 
 		// if no alt selected
 		return (
-			<img className="gallery-image-1" src={srcOne} alt="" aria-hidden="true" />
+			<img className="teacher-image-1" src={srcOne} alt="" aria-hidden="true" />
 		);
 	};
 
@@ -40,12 +40,12 @@ export default function save({ attributes }) {
 		if (!srcTwo) return null;
 
 		if (altTwo) {
-			return <img className="gallery-image-2" src={srcTwo} alt={altTwo} />;
+			return <img className="teacher-image-2" src={srcTwo} alt={altTwo} />;
 		}
 
 		// if no alt selected
 		return (
-			<img className="gallery-image-2" src={srcTwo} alt="" aria-hidden="true" />
+			<img className="teacher-image-2" src={srcTwo} alt="" aria-hidden="true" />
 		);
 	};
 
@@ -53,13 +53,13 @@ export default function save({ attributes }) {
 		if (!srcThree) return null;
 
 		if (altThree) {
-			return <img className="gallery-image-3" src={srcThree} alt={altThree} />;
+			return <img className="teacher-image-3" src={srcThree} alt={altThree} />;
 		}
 
 		// if no alt selected
 		return (
 			<img
-				className="gallery-image-3"
+				className="teacher-image-3"
 				src={srcThree}
 				alt=""
 				aria-hidden="true"
