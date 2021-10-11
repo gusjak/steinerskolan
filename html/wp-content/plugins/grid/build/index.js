@@ -277,7 +277,6 @@ __webpack_require__.r(__webpack_exports__);
   attributes: {
     title: {
       type: "string",
-      source: "html",
       selector: "h2"
     },
     imageUrlOne: {
@@ -290,22 +289,18 @@ __webpack_require__.r(__webpack_exports__);
     },
     bodyOne: {
       type: "string",
-      source: "html",
       selector: "p"
     },
     buttonTextOne: {
       type: "string",
-      source: "html",
       selector: "button"
     },
     bodyTwo: {
       type: "string",
-      source: "html",
       selector: "p"
     },
     buttonTextTwo: {
       type: "string",
-      source: "html",
       selector: "button"
     },
     imageUrlTwo: {
@@ -326,12 +321,10 @@ __webpack_require__.r(__webpack_exports__);
     },
     bodyThree: {
       type: "string",
-      source: "html",
       selector: "p"
     },
     buttonTextThree: {
       type: "string",
-      source: "html",
       selector: "button"
     }
   },

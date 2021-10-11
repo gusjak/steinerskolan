@@ -29,7 +29,6 @@ registerBlockType("create-block/grid", {
 	attributes: {
 		title: {
 			type: "string",
-			source: "html",
 			selector: "h2",
 		},
 		imageUrlOne: {
@@ -42,22 +41,18 @@ registerBlockType("create-block/grid", {
 		},
 		bodyOne: {
 			type: "string",
-			source: "html",
 			selector: "p",
 		},
 		buttonTextOne: {
 			type: "string",
-			source: "html",
 			selector: "button",
 		},
 		bodyTwo: {
 			type: "string",
-			source: "html",
 			selector: "p",
 		},
 		buttonTextTwo: {
 			type: "string",
-			source: "html",
 			selector: "button",
 		},
 		imageUrlTwo: {
@@ -78,12 +73,10 @@ registerBlockType("create-block/grid", {
 		},
 		bodyThree: {
 			type: "string",
-			source: "html",
 			selector: "p",
 		},
 		buttonTextThree: {
 			type: "string",
-			source: "html",
 			selector: "button",
 		},
 	},

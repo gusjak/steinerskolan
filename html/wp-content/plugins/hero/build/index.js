@@ -164,26 +164,22 @@ __webpack_require__.r(__webpack_exports__);
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
 
-(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)('create-block/hero', {
+(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)("create-block/hero", {
   attributes: {
     topTitle: {
       type: "string",
-      source: "html",
       selector: "h1"
     },
     bottomTitle: {
       type: "string",
-      source: "html",
       selector: "h2"
     },
     body: {
       type: "string",
-      source: "html",
       selector: "p"
     },
     buttonText: {
       type: "string",
-      source: "html",
       selector: "button"
     }
   },
