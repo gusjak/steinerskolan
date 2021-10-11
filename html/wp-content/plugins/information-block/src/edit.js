@@ -30,12 +30,7 @@ import './editor.scss';
  * @return {WPElement} Element to render.
  */
 
- ["core/image", { placeholder: "Gallery Image 1", className: "gallery-image-1" }]
- ["core/heading", { placeholder: "Top Hero Title", className: "top-hero-title" }],
- ["core/paragraph", { placeholder: "Hero Text", className: "hero-text" }],
- ["core/button", { placeholder: "Button text", className: "hero-button" }]
-
- export default function Edit() {
+export default function Edit() {
 	return (
 		<div { ...useBlockProps() }>
 			<InnerBlocks

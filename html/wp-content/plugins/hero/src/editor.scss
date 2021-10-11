@@ -1,0 +1,51 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+$beige: #f7f6f0;
+$white: #ffffff;
+$black: #262526;
+
+.wp-block-create-block-hero {
+	height: 92vh;
+	padding: 0 2rem;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: flex-start;
+	background-color: $beige;
+	color: $black;
+
+	.hero-top-title,
+	.hero-bottom-title {
+		font-style: normal;
+		font-weight: bold;
+		font-size: 50px;
+		padding-bottom: 0;
+		margin-bottom: 0;
+		width: 50vw;
+	}
+
+	.hero-text {
+		max-width: 75vw;
+		font-size: 20px;
+		line-height: 1.5;
+		letter-spacing: 0.1rem;
+		margin: 2rem 0;
+	}
+
+	.apply {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		width: 271px;
+		height: 60px;
+		left: 138px;
+		top: 579px;
+		border-radius: 50px;
+		border: 0.5px solid black;
+		background-color: white;
+	}
+}

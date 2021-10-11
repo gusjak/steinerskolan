@@ -1,0 +1,23 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.container {
+	height: 90vh;
+	background-color: #21759b;
+
+	h1 {
+		font-size: 40px;
+	}
+
+	p {
+		font-size: 20px;
+	}
+
+	a {
+		text-decoration: none;
+	}
+}

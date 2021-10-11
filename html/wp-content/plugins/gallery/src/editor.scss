@@ -1,0 +1,46 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+$beige: #f7f6f0;
+$white: #ffffff;
+$black: #262526;
+
+.wp-block-create-block-gallery {
+	height: 55vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: row;
+	background-color: $beige;
+
+	.gallery-image-1 {
+		position: absolute;
+		height: 200px;
+		width: 400px;
+		left: 50px;
+		top: 30px;
+	}
+
+	.gallery-image-2 {
+		position: absolute;
+		height: 150px;
+		width: 225px;
+		right: 145px;
+		top: 30px;
+	}
+
+	.gallery-image-3 {
+		position: absolute;
+		height: 175px;
+		width: 300px;
+		right: 80px;
+		top: 200px;
+	}
+
+	img {
+		object-fit: contain;
+	}
+}
