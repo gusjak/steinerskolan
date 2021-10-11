@@ -18,7 +18,9 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./editor.scss */ "./src/editor.scss");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
+/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__);
+/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./editor.scss */ "./src/editor.scss");
 
 
 /**
@@ -33,6 +35,7 @@ __webpack_require__.r(__webpack_exports__);
  *
  * @see https://developer.wordpress.org/block-editor/packages/packages-block-editor/#useBlockProps
  */
+
 
 
 /**
@@ -52,77 +55,169 @@ __webpack_require__.r(__webpack_exports__);
  * @return {WPElement} Element to render.
  */
 
-["core/image", {
-  placeholder: "Gallery Image 1",
-  className: "gallery-image-1"
-}][("core/heading", {
-  placeholder: "Top Hero Title",
-  className: "top-hero-title"
-})], ["core/paragraph", {
-  placeholder: "Hero Text",
-  className: "hero-text"
-}], ["core/button", {
-  placeholder: "Button text",
-  className: "hero-button"
-}];
-function Edit() {
-  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InnerBlocks, {
-    template: [['core/heading', {
-      level: 2,
-      placeholder: 'Information Title',
-      className: 'info-title'
-    }], ['core/column', {
-      className: 'box-container'
-    }, [['core/columns', {
-      className: 'box-group-1'
-    }, [['core/column', {
-      className: 'box-1'
-    }, [['core/image', {
-      level: 3,
-      placeholder: 'Information Image 1'
-    }]]], ['core/column', {
-      className: 'box-2'
-    }, [['core/paragraph', {
-      level: 3,
-      placeholder: 'Information Text 1',
-      className: 'box-text'
-    }], ['core/button', {
-      placeholder: 'Button Text',
-      className: 'read-more-button'
-    }]]]]], ['core/columns', {
-      className: 'box-group-2'
-    }, [['core/column', {
-      className: 'box-3'
-    }, [['core/paragraph', {
-      level: 3,
-      placeholder: 'Information Text 2',
-      className: 'box-text'
-    }], ['core/button', {
-      placeholder: 'Button Text',
-      className: 'read-more-button'
-    }]]], ['core/column', {
-      className: 'box-4'
-    }, [['core/image', {
-      level: 3,
-      placeholder: 'Information Image 2'
-    }]]]]], ['core/columns', {
-      className: 'box-group-3'
-    }, [['core/column', {
-      className: 'box-5'
-    }, [['core/image', {
-      level: 3,
-      placeholder: 'Information Image 3'
-    }]]], ['core/column', {
-      className: 'box-6'
-    }, [['core/paragraph', {
-      level: 3,
-      placeholder: 'Information Text 3',
-      className: 'box-text'
-    }], ['core/button', {
-      placeholder: 'Button Text',
-      className: 'read-more-button'
-    }]]]]]]]]
-  }));
+function Edit({
+  attributes,
+  setAttributes
+}) {
+  const getImageButtonOne = openEventOne => {
+    if (attributes.imageUrlOne) {
+      return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+        src: attributes.imageUrlOne,
+        onClick: openEventOne,
+        className: "teacher-image-1"
+      });
+    } else {
+      return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+        className: "button-container"
+      }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Button, {
+        onClick: openEventOne,
+        className: "button button-large"
+      }, "Pick an image"));
+    }
+  };
+
+  const getImageButtonTwo = openEventTwo => {
+    if (attributes.imageUrlTwo) {
+      return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+        src: attributes.imageUrlTwo,
+        onClick: openEventTwo,
+        className: "teacher-image-2"
+      });
+    } else {
+      return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+        className: "button-container"
+      }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Button, {
+        onClick: openEventTwo,
+        className: "button button-large"
+      }, "Pick an image"));
+    }
+  };
+
+  const getImageButtonThree = openEventThree => {
+    if (attributes.imageUrlThree) {
+      return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+        src: attributes.imageUrlThree,
+        onClick: openEventThree,
+        className: "teacher-image-3"
+      });
+    } else {
+      return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+        className: "button-container"
+      }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Button, {
+        onClick: openEventThree,
+        className: "button button-large"
+      }, "Pick an image"));
+    }
+  };
+
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
+    key: "editable",
+    tagname: "h2",
+    placeholder: "Teachers Title",
+    value: attributes.title,
+    onChange: newTitle => setAttributes({
+      title: newTitle
+    }),
+    className: "teachers-title"
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
+    key: "editable",
+    tagname: "p",
+    placeholder: "Teachers Body Text",
+    value: attributes.body,
+    onChange: newBody => setAttributes({
+      body: newBody
+    }),
+    className: "teachers-body-text"
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "teachers-wrapper"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
+    key: "editable",
+    tagname: "button",
+    placeholder: "<",
+    value: attributes.buttonLeft,
+    onChange: newButtonLeft => setAttributes({
+      buttonLeft: newButtonLeft
+    }),
+    className: "carousel-button"
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "teachers-card-1"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUpload, {
+    onSelect: media => {
+      setAttributes({
+        imageAltOne: media.alt,
+        imageUrlOne: media.url
+      });
+    },
+    type: "image",
+    value: attributes.imageID,
+    render: ({
+      open
+    }) => getImageButtonOne(open)
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
+    key: "editable",
+    tagname: "h3",
+    placeholder: "Teacher Title 1",
+    value: attributes.teacherNameOne,
+    onChange: newTeacherNameOne => setAttributes({
+      teacherNameOne: newTeacherNameOne
+    }),
+    className: "teacher-title"
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "teachers-card-2"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUpload, {
+    onSelect: media => {
+      setAttributes({
+        imageAltTwo: media.alt,
+        imageUrlTwo: media.url
+      });
+    },
+    type: "image",
+    value: attributes.imageID,
+    render: ({
+      open
+    }) => getImageButtonTwo(open)
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
+    key: "editable",
+    tagname: "h3",
+    placeholder: "Teacher Title 2",
+    value: attributes.teacherNameTwo,
+    onChange: newTeacherNameTwo => setAttributes({
+      teacherNameTwo: newTeacherNameTwo
+    }),
+    className: "teacher-title"
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "teachers-card-3"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUpload, {
+    onSelect: media => {
+      setAttributes({
+        imageAltThree: media.alt,
+        imageUrlThree: media.url
+      });
+    },
+    type: "image",
+    value: attributes.imageID,
+    render: ({
+      open
+    }) => getImageButtonThree(open)
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
+    key: "editable",
+    tagname: "h3",
+    placeholder: "Teacher Title 3",
+    value: attributes.teacherNameThree,
+    onChange: newTeacherNameThree => setAttributes({
+      teacherNameThree: newTeacherNameThree
+    }),
+    className: "teacher-title"
+  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
+    key: "editable",
+    tagname: "button",
+    placeholder: ">",
+    value: attributes.buttonRight,
+    onChange: newButtonRight => setAttributes({
+      buttonRight: newButtonRight
+    }),
+    className: "carousel-button"
+  })));
 }
 
 /***/ }),
@@ -166,7 +261,62 @@ __webpack_require__.r(__webpack_exports__);
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
 
-(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)('create-block/information-block', {
+(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)("create-block/carousel-small", {
+  attributes: {
+    title: {
+      type: "string",
+      selector: "h2"
+    },
+    body: {
+      type: "string",
+      selector: "p"
+    },
+    imageUrlOne: {
+      attribute: "src",
+      selector: "teacher-image-1"
+    },
+    imageAltOne: {
+      attribute: "alt",
+      selector: "teacher-image-1"
+    },
+    imageUrlTwo: {
+      attribute: "src",
+      selector: "teacher-image-2"
+    },
+    imageAltTwo: {
+      attribute: "alt",
+      selector: "teacher-image-2"
+    },
+    imageUrlThree: {
+      attribute: "src",
+      selector: "teacher-image-3"
+    },
+    imageAltThree: {
+      attribute: "alt",
+      selector: "teacher-image-3"
+    },
+    teacherNameOne: {
+      type: "string",
+      selector: "h3"
+    },
+    teacherNameTwo: {
+      type: "string",
+      selector: "h3"
+    },
+    teacherNameThree: {
+      type: "string",
+      selector: "h3"
+    },
+    buttonLeft: {
+      type: "string",
+      selector: "button"
+    },
+    buttonRight: {
+      type: "string",
+      selector: "button"
+    }
+  },
+
   /**
    * @see ./edit.js
    */
@@ -222,8 +372,98 @@ __webpack_require__.r(__webpack_exports__);
  * @return {WPElement} Element to render.
  */
 
-function save() {
-  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps.save(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.InnerBlocks.Content, null));
+function save({
+  attributes
+}) {
+  const imageOne = (srcOne, altOne) => {
+    if (!srcOne) return null;
+
+    if (altOne) {
+      return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+        className: "gallery-image-1",
+        src: srcOne,
+        alt: altOne
+      });
+    } // if no alt selected
+
+
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+      className: "gallery-image-1",
+      src: srcOne,
+      alt: "",
+      "aria-hidden": "true"
+    });
+  };
+
+  const imageTwo = (srcTwo, altTwo) => {
+    if (!srcTwo) return null;
+
+    if (altTwo) {
+      return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+        className: "gallery-image-2",
+        src: srcTwo,
+        alt: altTwo
+      });
+    } // if no alt selected
+
+
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+      className: "gallery-image-2",
+      src: srcTwo,
+      alt: "",
+      "aria-hidden": "true"
+    });
+  };
+
+  const imageThree = (srcThree, altThree) => {
+    if (!srcThree) return null;
+
+    if (altThree) {
+      return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+        className: "gallery-image-3",
+        src: srcThree,
+        alt: altThree
+      });
+    } // if no alt selected
+
+
+    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
+      className: "gallery-image-3",
+      src: srcThree,
+      alt: "",
+      "aria-hidden": "true"
+    });
+  };
+
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("section", {
+    className: "teachers-section"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h2", {
+    className: "teachers-title"
+  }, attributes.title), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+    className: "teachers-body-text"
+  }, attributes.body), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "teachers-wrapper"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+    href: "#"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+    className: "carousel-button"
+  }, attributes.buttonLeft)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "teachers-card-1"
+  }, imageOne(attributes.imageUrlOne, attributes.imageAltOne), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
+    className: "teacher-title"
+  }, attributes.teacherNameOne)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "teachers-card-2"
+  }, imageTwo(attributes.imageUrlTwo, attributes.imageAltTwo), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
+    className: "teacher-title"
+  }, attributes.teacherNameTwo)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "teachers-card-3"
+  }, imageThree(attributes.imageUrlThree, attributes.imageAltThree), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
+    className: "teacher-title"
+  }, attributes.teacherNameThree)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+    href: "#"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+    className: "carousel-button"
+  }, attributes.buttonRight))));
 }
 
 /***/ }),
@@ -269,6 +509,16 @@ module.exports = window["wp"]["blockEditor"];
 /***/ (function(module) {
 
 module.exports = window["wp"]["blocks"];
+
+/***/ }),
+
+/***/ "@wordpress/components":
+/*!************************************!*\
+  !*** external ["wp","components"] ***!
+  \************************************/
+/***/ (function(module) {
+
+module.exports = window["wp"]["components"];
 
 /***/ }),
 
@@ -447,7 +697,7 @@ module.exports = window["wp"]["i18n"];
 /******/ 			return __webpack_require__.O(result);
 /******/ 		}
 /******/ 		
-/******/ 		var chunkLoadingGlobal = self["webpackChunkinformation_block"] = self["webpackChunkinformation_block"] || [];
+/******/ 		var chunkLoadingGlobal = self["webpackChunkcarousel_small"] = self["webpackChunkcarousel_small"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	}();

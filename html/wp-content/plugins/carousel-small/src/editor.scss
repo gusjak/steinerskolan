@@ -1,0 +1,96 @@
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+$beige: #f7f6f0;
+$white: #ffffff;
+$black: #262526;
+
+.wp-block-create-block-carousel-small {
+	height: auto;
+	padding: 5rem 2rem;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+	background-color: $beige;
+	color: $black;
+
+	.teachers-title {
+		font-size: 40px;
+		margin-bottom: 2rem;
+		font-weight: 400;
+		color: $black;
+	}
+
+	.teachers-body-text {
+		width: 650px;
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 1.5;
+		margin-bottom: 3rem;
+		letter-spacing: 1px;
+	}
+
+	.teacher-title {
+		font-size: 20px;
+		font-weight: 500;
+		letter-spacing: 1.5px;
+		margin: 0 10px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		color: $black;
+		background-color: white;
+		border: 1px solid $black;
+		margin-bottom: 40px;
+	}
+
+	.teachers-wrapper {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-evenly;
+		align-items: center;
+	}
+
+	.button-container {
+		margin: 35% 25%;
+	}
+
+	.teachers-card-1,
+	.teachers-card-2,
+	.teachers-card-3 {
+		border: 1px solid $black;
+		height: 230px;
+		width: 200px;
+		margin: 10px;
+	}
+
+	.carousel-button {
+		height: 30px;
+		width: 30px;
+		border-radius: 50%;
+		border: 1px solid $black;
+		margin: 30px;
+		background-color: white;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	img {
+		border-right: 0;
+		max-width: 100%;
+		max-height: 100%;
+		height: 100%;
+		width: 100%;
+		background: url(http://localhost:8000/wp-content/uploads/2021/10/Bild-16.jpeg);
+		object-fit: fill;
+		transition: 0.2s ease-in-out;
+	}
+	s img:hover {
+		transform: scale(1.05);
+		cursor: pointer;
+	}
+}
