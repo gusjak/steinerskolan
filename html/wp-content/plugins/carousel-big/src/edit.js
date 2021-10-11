@@ -37,7 +37,7 @@ export default function Edit({ attributes, setAttributes }) {
 				<img
 					src={attributes.imageUrl}
 					onClick={openEvent}
-					className="info-image-1"
+					className="student-image"
 				/>
 			);
 		} else {

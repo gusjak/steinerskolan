@@ -27,11 +27,13 @@ export default function save({ attributes }) {
 		if (!src) return null;
 
 		if (alt) {
-			return <img className="info-image-1" src={src} alt={alt} />;
+			return <img className="student-image" src={src} alt={alt} />;
 		}
 
 		// if no alt selected
-		return <img className="info-image-1" src={src} alt="" aria-hidden="true" />;
+		return (
+			<img className="student-image" src={src} alt="" aria-hidden="true" />
+		);
 	};
 	return (
 		<section className="former-students-section">

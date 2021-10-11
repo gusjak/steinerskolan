@@ -29,8 +29,7 @@ registerBlockType("create-block/carousel-big", {
 	attributes: {
 		title: {
 			type: "string",
-			source: "html",
-			selector: "h2",
+			selector: "former-students-title",
 		},
 		imageUrl: {
 			attribute: "src",
@@ -42,47 +41,38 @@ registerBlockType("create-block/carousel-big", {
 		},
 		studentName: {
 			type: "string",
-			source: "html",
 			selector: "h3",
 		},
 		bodyProfession: {
 			type: "string",
-			source: "html",
 			selector: "p",
 		},
 		questionOne: {
 			type: "string",
-			source: "html",
 			selector: "h3",
 		},
 		bodyAnswerOne: {
 			type: "string",
-			source: "html",
 			selector: "p",
 		},
 		questionTwo: {
 			type: "string",
-			source: "html",
 			selector: "h3",
 		},
 		bodyAnswerTwo: {
 			type: "string",
-			source: "html",
 			selector: "p",
 		},
 		date: {
 			type: "string",
-			source: "html",
 			selector: "h3",
 		},
 		buttonLeft: {
 			type: "string",
-			source: "html",
 			selector: "button",
 		},
 		buttonRight: {
 			type: "string",
-			source: "html",
 			selector: "button",
 		},
 	},

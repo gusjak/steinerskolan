@@ -64,7 +64,7 @@ function Edit({
       return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
         src: attributes.imageUrl,
         onClick: openEvent,
-        className: "info-image-1"
+        className: "student-image"
       });
     } else {
       return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -235,8 +235,7 @@ __webpack_require__.r(__webpack_exports__);
   attributes: {
     title: {
       type: "string",
-      source: "html",
-      selector: "h2"
+      selector: "former-students-title"
     },
     imageUrl: {
       attribute: "src",
@@ -248,47 +247,38 @@ __webpack_require__.r(__webpack_exports__);
     },
     studentName: {
       type: "string",
-      source: "html",
       selector: "h3"
     },
     bodyProfession: {
       type: "string",
-      source: "html",
       selector: "p"
     },
     questionOne: {
       type: "string",
-      source: "html",
       selector: "h3"
     },
     bodyAnswerOne: {
       type: "string",
-      source: "html",
       selector: "p"
     },
     questionTwo: {
       type: "string",
-      source: "html",
       selector: "h3"
     },
     bodyAnswerTwo: {
       type: "string",
-      source: "html",
       selector: "p"
     },
     date: {
       type: "string",
-      source: "html",
       selector: "h3"
     },
     buttonLeft: {
       type: "string",
-      source: "html",
       selector: "button"
     },
     buttonRight: {
       type: "string",
-      source: "html",
       selector: "button"
     }
   },
@@ -356,7 +346,7 @@ function save({
 
     if (alt) {
       return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-        className: "info-image-1",
+        className: "student-image",
         src: src,
         alt: alt
       });
@@ -364,7 +354,7 @@ function save({
 
 
     return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-      className: "info-image-1",
+      className: "student-image",
       src: src,
       alt: "",
       "aria-hidden": "true"

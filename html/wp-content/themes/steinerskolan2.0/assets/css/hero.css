@@ -1,4 +1,4 @@
-/* HERO SECTION 1 */
+/* HERO SECTION */
 .hero-section {
   width: 100%;
   height: 95vh;
@@ -66,7 +66,7 @@
   }
 }
 
-/* GALLERY SECTION 2*/
+/* GALLERY SECTION */
 
 .gallery-section {
   width: 100%;
@@ -109,7 +109,7 @@
   object-fit: cover;
 }
 
-/* VÅR SKOLA SECTION 3 */
+/* GRID SECTION */
 .grid-section {
   padding: 10rem 0;
   display: flex;
@@ -265,4 +265,95 @@
   background-color: var(--main-color_black);
   color: white;
   cursor: pointer;
+}
+
+/* CAROUSEL SECTION */
+.former-students-section {
+  height: 95vh;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.former-students-title {
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  font-weight: 400;
+}
+
+.header-big {
+  font-size: 1.2rem;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin: 0 1rem;
+}
+
+.header {
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  margin-top: 2rem;
+  margin: 0 1rem;
+}
+
+.student-body-text {
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.2;
+  margin-bottom: 2rem;
+  letter-spacing: 1px;
+  margin: 0 1rem;
+}
+
+.former-students-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.former-students-container {
+  width: 1200px;
+  height: 550px;
+  display: flex;
+  object-fit: contain;
+}
+
+.former-students-image-container {
+  height: 100%;
+  width: 50%;
+}
+
+.former-student-info {
+  height: 100%;
+  width: 50%;
+  border: 0.5px solid var(--main-color_black);
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.carousel-button {
+  width: 50%;
+  padding: 0.8rem 0.8rem;
+  border-radius: 50%;
+  border: 1px solid var(--main-color_black);
+  margin: 0 2rem;
+  transition: 0.2s ease-in-out;
+  background-color: white;
+}
+
+.carousel-button:hover {
+  background-color: var(--main-color_black);
+  color: white;
+  cursor: pointer;
+}
+
+.former-students-container img {
+  border: 1px solid var(--main-color_black);
+  border-right: 0;
+  max-width: 100%;
+  max-height: 100%;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
