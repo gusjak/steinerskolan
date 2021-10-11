@@ -277,7 +277,7 @@
 
 .former-students-title {
   font-size: 3rem;
-  margin-bottom: 3rem;
+  margin-bottom: 5rem;
   font-weight: 400;
 }
 
@@ -417,4 +417,21 @@
   height: 100%;
   width: 100%;
   object-fit: fill;
+}
+
+/* INSTAGRAM SECTION */
+
+.instagram-section {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-bottom: 10px;
+}
+
+.instagram-section-title {
+  font-size: 3rem;
+  margin-bottom: 5rem;
+  font-weight: 400;
 }
