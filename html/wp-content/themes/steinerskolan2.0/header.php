@@ -65,7 +65,7 @@
                         </li>
                     <?php endif; ?>
                 <?php endforeach; ?>
-                <button class="apply" id="button">Ansök</button>
+                <button class="apply-button" id="button">Ansök</button>
             </ul>
         </nav>
 

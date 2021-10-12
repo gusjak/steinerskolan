@@ -421,15 +421,15 @@ function save({
     className: "card-1"
   }, imageOne(attributes.imageUrlOne, attributes.imageAltOne), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
     className: "third-header"
-  }, attributes.teacherNameOne)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, attributes.cardTitleOne)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "card-2"
   }, imageTwo(attributes.imageUrlTwo, attributes.imageAltTwo), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
     className: "third-header"
-  }, attributes.teacherNameTwo)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, attributes.cardTitleTwo)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "card-3"
   }, imageThree(attributes.imageUrlThree, attributes.imageAltThree), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
     className: "third-header"
-  }, attributes.teacherNameThree))));
+  }, attributes.cardTitleThree))));
 }
 
 /***/ }),
