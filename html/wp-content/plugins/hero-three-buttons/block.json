@@ -1,0 +1,16 @@
+{
+	"apiVersion": 2,
+	"name": "create-block/hero-three-buttons",
+	"version": "0.1.0",
+	"title": "Hero Three Buttons",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Example block written with ESNext standard and JSX support – build step required.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "hero-three-buttons",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}

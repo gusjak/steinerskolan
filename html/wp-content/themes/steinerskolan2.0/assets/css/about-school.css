@@ -1,0 +1,47 @@
+.about-school-section {
+  width: 100%;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 10vw;
+}
+
+.about-school-title {
+  width: 90vw;
+  font-size: 5rem;
+  margin-top: -10px;
+  word-wrap: break-word;
+}
+
+.about-school-text {
+  max-width: 1200px;
+  font-size: 1.5rem;
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
+  margin: 1.5rem 0 3rem 0;
+}
+
+.button-row {
+  display: flex;
+  flex-direction: row;
+}
+
+.scroll-button {
+  width: 270px;
+  padding: 1rem 0;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin-right: 2rem;
+  border-radius: 50px;
+  border: 1px solid var(--main-color_black);
+  transition: 0.2s ease-in-out;
+  background-color: white;
+}
+
+.scroll-button:hover {
+  background-color: var(--main-color_black);
+  color: white;
+  cursor: pointer;
+}
