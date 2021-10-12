@@ -31,56 +31,33 @@ import "./editor.scss";
  * @return {WPElement} Element to render.
  */
 export default function Edit({ attributes, setAttributes }) {
-	const { topTitle, bottomTitle, body, buttonText } = attributes;
-
-	function onChangeTopTitle(newTopTitle) {
-		setAttributes({ topTitle: newTopTitle });
-	}
-	function onChangeBottomTitle(newBottomTitle) {
-		setAttributes({ bottomTitle: newBottomTitle });
-	}
-
-	function onChangeBody(newBody) {
-		setAttributes({ body: newBody });
-	}
-
-	function onChangeButtonText(newButtonText) {
-		setAttributes({ buttonText: newButtonText });
-	}
-
 	return (
 		<div {...useBlockProps()}>
 			<RichText
 				key="editable"
 				tagname="h1"
-				placeholder="Top Title"
-				value={topTitle}
-				onChange={onChangeTopTitle}
-				className="hero-top-title"
-			/>
-			<RichText
-				key="editable"
-				tagname="h2"
-				placeholder="Bottom Title"
-				value={bottomTitle}
-				onChange={onChangeBottomTitle}
-				className="hero-bottom-title"
+				placeholder="Title"
+				value={attributes.title}
+				onChange={(newTitle) => setAttributes({ title: newTitle })}
+				className="hero-title"
 			/>
 			<RichText
 				key="editable"
 				tagname="p"
 				placeholder="Text"
-				value={body}
-				onChange={onChangeBody}
+				value={attributes.body}
+				onChange={(newBody) => setAttributes({ body: newBody })}
 				className="hero-text"
 			/>
 			<RichText
 				key="editable"
 				tagname="button"
 				placeholder="Button Text"
-				value={buttonText}
-				onChange={onChangeButtonText}
-				className="apply"
+				value={attributes.buttonText}
+				onChange={(newButtonText) =>
+					setAttributes({ buttonText: newButtonText })
+				}
+				className="hero-button"
 			/>
 		</div>
 	);

@@ -59,65 +59,33 @@ function Edit({
   attributes,
   setAttributes
 }) {
-  const {
-    topTitle,
-    bottomTitle,
-    body,
-    buttonText
-  } = attributes;
-
-  function onChangeTopTitle(newTopTitle) {
-    setAttributes({
-      topTitle: newTopTitle
-    });
-  }
-
-  function onChangeBottomTitle(newBottomTitle) {
-    setAttributes({
-      bottomTitle: newBottomTitle
-    });
-  }
-
-  function onChangeBody(newBody) {
-    setAttributes({
-      body: newBody
-    });
-  }
-
-  function onChangeButtonText(newButtonText) {
-    setAttributes({
-      buttonText: newButtonText
-    });
-  }
-
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
     key: "editable",
     tagname: "h1",
-    placeholder: "Top Title",
-    value: topTitle,
-    onChange: onChangeTopTitle,
-    className: "hero-top-title"
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
-    key: "editable",
-    tagname: "h2",
-    placeholder: "Bottom Title",
-    value: bottomTitle,
-    onChange: onChangeBottomTitle,
-    className: "hero-bottom-title"
+    placeholder: "Title",
+    value: attributes.title,
+    onChange: newTitle => setAttributes({
+      title: newTitle
+    }),
+    className: "hero-title"
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
     key: "editable",
     tagname: "p",
     placeholder: "Text",
-    value: body,
-    onChange: onChangeBody,
+    value: attributes.body,
+    onChange: newBody => setAttributes({
+      body: newBody
+    }),
     className: "hero-text"
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
     key: "editable",
     tagname: "button",
     placeholder: "Button Text",
-    value: buttonText,
-    onChange: onChangeButtonText,
-    className: "apply"
+    value: attributes.buttonText,
+    onChange: newButtonText => setAttributes({
+      buttonText: newButtonText
+    }),
+    className: "hero-button"
   }));
 }
 
@@ -166,13 +134,9 @@ __webpack_require__.r(__webpack_exports__);
 
 (0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)("create-block/hero", {
   attributes: {
-    topTitle: {
+    title: {
       type: "string",
       selector: "h1"
-    },
-    bottomTitle: {
-      type: "string",
-      selector: "h2"
     },
     body: {
       type: "string",
@@ -242,25 +206,17 @@ __webpack_require__.r(__webpack_exports__);
 function save({
   attributes
 }) {
-  const {
-    topTitle,
-    bottomTitle,
-    body,
-    buttonText
-  } = attributes;
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("section", {
     className: "hero-section"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h1", {
-    className: "hero-top-title"
-  }, topTitle), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h2", {
-    className: "hero-bottom-title"
-  }, bottomTitle), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
+    className: "hero-title"
+  }, attributes.title), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
     className: "hero-text"
-  }, body), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
-    href: "https://portal.idunsoft.se/#ansokanomplats-gbg/"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+  }, attributes.body), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
     className: "hero-button"
-  }, buttonText)));
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+    href: "https://portal.idunsoft.se/#ansokanomplats-gbg/"
+  }, attributes.buttonText)));
 }
 
 /***/ }),

@@ -17,14 +17,14 @@ $black: #262526;
 	background-color: $beige;
 	color: $black;
 
-	.former-students-title {
+	.secondary-header {
 		font-size: 40px;
 		margin-bottom: 3rem;
 		font-weight: 400;
 		color: $black;
 	}
 
-	.header-big {
+	.third-header {
 		font-size: 20px;
 		font-weight: 500;
 		letter-spacing: 1px;
@@ -32,7 +32,7 @@ $black: #262526;
 		color: $black;
 	}
 
-	.header {
+	.fourth-header {
 		font-size: 18px;
 		font-weight: 500;
 		letter-spacing: 1px;
@@ -75,18 +75,6 @@ $black: #262526;
 		display: flex;
 		justify-content: center;
 		flex-direction: column;
-	}
-
-	.carousel-button {
-		height: 50px;
-		width: 50px;
-		border-radius: 50%;
-		border: 1px solid $black;
-		margin: 30px;
-		background-color: white;
-		display: flex;
-		justify-content: center;
-		align-items: center;
 	}
 
 	img {

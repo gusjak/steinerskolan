@@ -36,20 +36,20 @@ export default function Edit({ attributes, setAttributes }) {
 			<RichText
 				key="editable"
 				tagname="h1"
-				placeholder="About school title"
+				placeholder="Title"
 				value={attributes.title}
 				onChange={(newTitle) => setAttributes({ title: newTitle })}
-				className="about-school-title"
+				className="hero-title"
 			/>
 
 			{/* Body Text */}
 			<RichText
 				key="editable"
 				tagname="p"
-				placeholder="About school text"
+				placeholder="Text"
 				value={attributes.body}
 				onChange={(newBody) => setAttributes({ body: newBody })}
-				className="about-school-text"
+				className="hero-text"
 			/>
 
 			{/* Buttons */}
@@ -62,7 +62,7 @@ export default function Edit({ attributes, setAttributes }) {
 					onChange={(newButtonTextOne) =>
 						setAttributes({ buttonTextOne: newButtonTextOne })
 					}
-					className="scroll-button"
+					className="hero-button"
 				/>
 				<RichText
 					key="editable"
@@ -72,7 +72,7 @@ export default function Edit({ attributes, setAttributes }) {
 					onChange={(newButtonTextTwo) =>
 						setAttributes({ buttonTextTwo: newButtonTextTwo })
 					}
-					className="scroll-button"
+					className="hero-button"
 				/>
 				<RichText
 					key="editable"
@@ -82,7 +82,7 @@ export default function Edit({ attributes, setAttributes }) {
 					onChange={(newButtonTextThree) =>
 						setAttributes({ buttonTextThree: newButtonTextThree })
 					}
-					className="scroll-button"
+					className="hero-button"
 				/>
 			</div>
 		</div>

@@ -25,7 +25,7 @@ import { useBlockProps } from "@wordpress/block-editor";
 export default function save() {
 	return (
 		<section class="instagram-section">
-			<h2 class="instagram-section-title">Följ oss på instagram</h2>
+			<h2 class="secondary-header">Följ oss på instagram</h2>
 			<div
 				class="tagembed-container"
 				style=" width:1200px;height:500px;overflow: auto;"

@@ -37,47 +37,39 @@ registerBlockType("create-block/carousel-small", {
 		},
 		imageUrlOne: {
 			attribute: "src",
-			selector: "teacher-image-1",
+			selector: "card-image-1",
 		},
 		imageAltOne: {
 			attribute: "alt",
-			selector: "teacher-image-1",
+			selector: "card-image-1",
 		},
 		imageUrlTwo: {
 			attribute: "src",
-			selector: "teacher-image-2",
+			selector: "card-image-2",
 		},
 		imageAltTwo: {
 			attribute: "alt",
-			selector: "teacher-image-2",
+			selector: "card-image-2",
 		},
 		imageUrlThree: {
 			attribute: "src",
-			selector: "teacher-image-3",
+			selector: "card-image-3",
 		},
 		imageAltThree: {
 			attribute: "alt",
-			selector: "teacher-image-3",
+			selector: "card-image-3",
 		},
-		teacherNameOne: {
+		cardTitleOne: {
 			type: "string",
 			selector: "h3",
 		},
-		teacherNameTwo: {
+		cardTitleTwo: {
 			type: "string",
 			selector: "h3",
 		},
-		teacherNameThree: {
+		cardTitleThree: {
 			type: "string",
 			selector: "h3",
-		},
-		buttonLeft: {
-			type: "string",
-			selector: "button",
-		},
-		buttonRight: {
-			type: "string",
-			selector: "button",
 		},
 	},
 	/**

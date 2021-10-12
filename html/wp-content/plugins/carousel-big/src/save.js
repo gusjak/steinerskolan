@@ -37,32 +37,24 @@ export default function save({ attributes }) {
 	};
 	return (
 		<section className="former-students-section">
-			<h2 className="former-students-title">{attributes.title}</h2>
+			<h2 className="secondary-header">{attributes.title}</h2>
 			<div className="former-students-wrapper">
-				<a href="#">
-					<button className="carousel-button">{attributes.buttonLeft}</button>
-				</a>
-
 				<div className="former-students-container">
 					<div className="former-students-image-container">
 						{image(attributes.imageUrl, attributes.imageAlt)}
 					</div>
 					<div className="former-student-info">
-						<h3 className="header-big">{attributes.studentName}</h3>
+						<h3 className="third-header">{attributes.studentName}</h3>
 						<p className="student-body-text">{attributes.bodyProfession}</p>
 
-						<h3 className="header">{attributes.questionOne}</h3>
+						<h4 className="fourth-header">{attributes.questionOne}</h4>
 						<p className="student-body-text">{attributes.bodyAnswerOne}</p>
-						<h3 className="header">{attributes.questionTwo}</h3>
+						<h4 className="fourth-header">{attributes.questionTwo}</h4>
 						<p className="student-body-text">{attributes.bodyAnswerTwo}</p>
 
-						<h3 className="header">{attributes.date}</h3>
+						<h4 className="fourth-header">{attributes.date}</h4>
 					</div>
 				</div>
-
-				<a href="#">
-					<button className="carousel-button">{attributes.buttonRight}</button>
-				</a>
 			</div>
 		</section>
 	);

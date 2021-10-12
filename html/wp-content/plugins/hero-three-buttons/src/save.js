@@ -24,22 +24,22 @@ import { useBlockProps } from "@wordpress/block-editor";
  */
 export default function save({ attributes }) {
 	return (
-		<section className="about-school-section">
-			<h1 className="about-school-title">{attributes.title}</h1>
-			<p className="about-school-text">{attributes.body}</p>
+		<section className="hero-section">
+			<h1 className="hero-title">{attributes.title}</h1>
+			<p className="hero-text">{attributes.body}</p>
 
 			<div className="button-row">
-				<a href="#">
-					<button className="scroll-button">{attributes.buttonTextOne}</button>
-				</a>
-				<a href="#">
-					<button className="scroll-button">{attributes.buttonTextTwo}</button>
-				</a>
-				<a href="#">
-					<button className="scroll-button">
-						{attributes.buttonTextThree}
-					</button>
-				</a>
+				<button className="hero-button">
+					<a href="">{attributes.buttonTextOne}</a>
+				</button>
+
+				<button className="hero-button">
+					<a href="">{attributes.buttonTextTwo}</a>
+				</button>
+
+				<button className="hero-button">
+					<a href="">{attributes.buttonTextThree}</a>
+				</button>
 			</div>
 		</section>
 	);

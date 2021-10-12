@@ -17,14 +17,14 @@ $black: #262526;
 	background-color: $beige;
 	color: $black;
 
-	.teachers-title {
+	.secondary-header {
 		font-size: 40px;
 		margin-bottom: 2rem;
 		font-weight: 400;
 		color: $black;
 	}
 
-	.teachers-body-text {
+	.body-text {
 		width: 650px;
 		font-size: 16px;
 		font-weight: 300;
@@ -33,7 +33,7 @@ $black: #262526;
 		letter-spacing: 1px;
 	}
 
-	.teacher-title {
+	.third-header {
 		font-size: 20px;
 		font-weight: 500;
 		letter-spacing: 1.5px;
@@ -47,7 +47,7 @@ $black: #262526;
 		margin-bottom: 40px;
 	}
 
-	.teachers-wrapper {
+	.cards-wrapper {
 		display: flex;
 		flex-direction: row;
 		justify-content: space-evenly;
@@ -58,25 +58,13 @@ $black: #262526;
 		margin: 35% 25%;
 	}
 
-	.teachers-card-1,
-	.teachers-card-2,
-	.teachers-card-3 {
+	.card-1,
+	.card-2,
+	.card-3 {
 		border: 1px solid $black;
 		height: 230px;
 		width: 200px;
 		margin: 10px;
-	}
-
-	.carousel-button {
-		height: 30px;
-		width: 30px;
-		border-radius: 50%;
-		border: 1px solid $black;
-		margin: 30px;
-		background-color: white;
-		display: flex;
-		justify-content: center;
-		align-items: center;
 	}
 
 	img {

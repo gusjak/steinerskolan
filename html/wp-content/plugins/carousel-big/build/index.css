@@ -15,20 +15,20 @@
   background-color: #f7f6f0;
   color: #262526;
 }
-.wp-block-create-block-carousel-big .former-students-title {
+.wp-block-create-block-carousel-big .secondary-header {
   font-size: 40px;
   margin-bottom: 3rem;
   font-weight: 400;
   color: #262526;
 }
-.wp-block-create-block-carousel-big .header-big {
+.wp-block-create-block-carousel-big .third-header {
   font-size: 20px;
   font-weight: 500;
   letter-spacing: 1px;
   margin: 0 10px;
   color: #262526;
 }
-.wp-block-create-block-carousel-big .header {
+.wp-block-create-block-carousel-big .fourth-header {
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 1px;
@@ -67,17 +67,6 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-}
-.wp-block-create-block-carousel-big .carousel-button {
-  height: 50px;
-  width: 50px;
-  border-radius: 50%;
-  border: 1px solid #262526;
-  margin: 30px;
-  background-color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 .wp-block-create-block-carousel-big img {
   border: 1px solid #262526;

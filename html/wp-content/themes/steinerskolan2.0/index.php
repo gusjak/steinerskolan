@@ -1,18 +1,14 @@
 <!-- Default page for every menu item that doesn't have a specified template.  -->
 <?php get_header(); ?>
 
-<div class="row">
-    <div class="col">
-        <?php if (have_posts()) : ?>
+<?php if (have_posts()) : ?>
 
-            <?php while (have_posts()) : the_post(); ?>
+    <?php while (have_posts()) : the_post(); ?>
 
-                <?php the_content(); ?>
+        <?php the_content(); ?>
 
-            <?php endwhile; ?>
+    <?php endwhile; ?>
 
-        <?php endif; ?>
-    </div><!-- /col -->
-</div><!-- /row -->
+<?php endif; ?>
 
 <?php get_footer(); ?>

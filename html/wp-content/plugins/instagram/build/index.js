@@ -56,7 +56,7 @@ function Edit() {
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("section", {
     class: "instagram-section"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h2", {
-    class: "instagram-section-title"
+    class: "secondary-header"
   }, "F\xF6lj oss p\xE5 instagram"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     class: "tagembed-container",
     style: " width:1200px;height:500px;overflow: auto;"
@@ -171,7 +171,7 @@ function save() {
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("section", {
     class: "instagram-section"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h2", {
-    class: "instagram-section-title"
+    class: "secondary-header"
   }, "F\xF6lj oss p\xE5 instagram"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     class: "tagembed-container",
     style: " width:1200px;height:500px;overflow: auto;"

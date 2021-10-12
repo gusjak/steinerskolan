@@ -37,7 +37,7 @@ export default function Edit({ attributes, setAttributes }) {
 				<img
 					src={attributes.imageUrlOne}
 					onClick={openEventOne}
-					className="teacher-image-1"
+					className="card-image-1"
 				/>
 			);
 		} else {
@@ -57,7 +57,7 @@ export default function Edit({ attributes, setAttributes }) {
 				<img
 					src={attributes.imageUrlTwo}
 					onClick={openEventTwo}
-					className="teacher-image-2"
+					className="card-image-2"
 				/>
 			);
 		} else {
@@ -77,7 +77,7 @@ export default function Edit({ attributes, setAttributes }) {
 				<img
 					src={attributes.imageUrlThree}
 					onClick={openEventThree}
-					className="teacher-image-3"
+					className="card-image-3"
 				/>
 			);
 		} else {
@@ -96,37 +96,25 @@ export default function Edit({ attributes, setAttributes }) {
 			<RichText
 				key="editable"
 				tagname="h2"
-				placeholder="Teachers Title"
+				placeholder="Section Title"
 				value={attributes.title}
 				onChange={(newTitle) => setAttributes({ title: newTitle })}
-				className="teachers-title"
+				className="secondary-header"
 			/>
 			{/* Body Text */}
 			<RichText
 				key="editable"
 				tagname="p"
-				placeholder="Teachers Body Text"
+				placeholder="Section Text"
 				value={attributes.body}
 				onChange={(newBody) => setAttributes({ body: newBody })}
-				className="teachers-body-text"
+				className="body-text"
 			/>
 
 			{/* Teachers Wrapper */}
-			<div className="teachers-wrapper">
-				{/* Left Button */}
-				<RichText
-					key="editable"
-					tagname="button"
-					placeholder="<"
-					value={attributes.buttonLeft}
-					onChange={(newButtonLeft) =>
-						setAttributes({ buttonLeft: newButtonLeft })
-					}
-					className="carousel-button"
-				/>
-
+			<div className="cards-wrapper">
 				{/* Card 1 */}
-				<div className="teachers-card-1">
+				<div className="card-1">
 					<MediaUpload
 						onSelect={(media) => {
 							setAttributes({ imageAltOne: media.alt, imageUrlOne: media.url });
@@ -138,16 +126,16 @@ export default function Edit({ attributes, setAttributes }) {
 					<RichText
 						key="editable"
 						tagname="h3"
-						placeholder="Teacher Title 1"
-						value={attributes.teacherNameOne}
-						onChange={(newTeacherNameOne) =>
-							setAttributes({ teacherNameOne: newTeacherNameOne })
+						placeholder="Card Title 1"
+						value={attributes.cardTitleOne}
+						onChange={(newcardTitleOne) =>
+							setAttributes({ cardTitleOne: newcardTitleOne })
 						}
-						className="teacher-title"
+						className="third-header"
 					/>
 				</div>
 				{/* Card 2 */}
-				<div className="teachers-card-2">
+				<div className="card-2">
 					<MediaUpload
 						onSelect={(media) => {
 							setAttributes({ imageAltTwo: media.alt, imageUrlTwo: media.url });
@@ -159,16 +147,16 @@ export default function Edit({ attributes, setAttributes }) {
 					<RichText
 						key="editable"
 						tagname="h3"
-						placeholder="Teacher Title 2"
-						value={attributes.teacherNameTwo}
-						onChange={(newTeacherNameTwo) =>
-							setAttributes({ teacherNameTwo: newTeacherNameTwo })
+						placeholder="Card Title 2"
+						value={attributes.cardTitleTwo}
+						onChange={(newcardTitleTwo) =>
+							setAttributes({ cardTitleTwo: newcardTitleTwo })
 						}
-						className="teacher-title"
+						className="third-header"
 					/>
 				</div>
 				{/* Card 3 */}
-				<div className="teachers-card-3">
+				<div className="card-3">
 					<MediaUpload
 						onSelect={(media) => {
 							setAttributes({
@@ -183,26 +171,14 @@ export default function Edit({ attributes, setAttributes }) {
 					<RichText
 						key="editable"
 						tagname="h3"
-						placeholder="Teacher Title 3"
-						value={attributes.teacherNameThree}
-						onChange={(newTeacherNameThree) =>
-							setAttributes({ teacherNameThree: newTeacherNameThree })
+						placeholder="Card Title 3"
+						value={attributes.cardTitleThree}
+						onChange={(newcardTitleThree) =>
+							setAttributes({ cardTitleThree: newcardTitleThree })
 						}
-						className="teacher-title"
+						className="third-header"
 					/>
 				</div>
-
-				{/* Right Button */}
-				<RichText
-					key="editable"
-					tagname="button"
-					placeholder=">"
-					value={attributes.buttonRight}
-					onChange={(newButtonRight) =>
-						setAttributes({ buttonRight: newButtonRight })
-					}
-					className="carousel-button"
-				/>
 			</div>
 		</div>
 	);

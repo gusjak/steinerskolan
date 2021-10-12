@@ -79,24 +79,15 @@ function Edit({
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
     key: "editable",
     tagname: "h2",
-    placeholder: "Former Students Title",
+    placeholder: "Section Title",
     value: attributes.title,
     onChange: newTitle => setAttributes({
       title: newTitle
     }),
-    className: "former-students-title"
+    className: "secondary-header"
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "former-students-wrapper"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
-    key: "editable",
-    tagname: "button",
-    placeholder: "<",
-    value: attributes.buttonLeft,
-    onChange: newButtonLeft => setAttributes({
-      buttonLeft: newButtonLeft
-    }),
-    className: "carousel-button"
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "former-students-container"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "former-students-image-container"
@@ -118,16 +109,16 @@ function Edit({
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
     key: "editable",
     tagname: "h3",
-    placeholder: "Former Student's Name",
+    placeholder: "Card Title",
     value: attributes.studentName,
     onChange: newStudentName => setAttributes({
       studentName: newStudentName
     }),
-    className: "header-big"
+    className: "third-header"
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
     key: "editable",
     tagname: "p",
-    placeholder: "Student's Profession",
+    placeholder: "Card Secondary Title",
     value: attributes.bodyProfession,
     onChange: newBodyProfession => setAttributes({
       bodyProfession: newBodyProfession
@@ -135,17 +126,17 @@ function Edit({
     className: "student-body-text"
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
     key: "editable",
-    tagname: "h3",
-    placeholder: "Question 1",
+    tagname: "h4",
+    placeholder: "Header Title",
     value: attributes.questionOne,
     onChange: newQuestionOne => setAttributes({
       questionOne: newQuestionOne
     }),
-    className: "header"
+    className: "fourth-header"
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
     key: "editable",
     tagname: "p",
-    placeholder: "Answer 1",
+    placeholder: "Body Text",
     value: attributes.bodyAnswerOne,
     onChange: newBodyAnswerOne => setAttributes({
       bodyAnswerOne: newBodyAnswerOne
@@ -153,17 +144,17 @@ function Edit({
     className: "student-body-text"
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
     key: "editable",
-    tagname: "h3",
-    placeholder: "Question 2",
+    tagname: "h4",
+    placeholder: "Header Title",
     value: attributes.questionTwo,
     onChange: newQuestionTwo => setAttributes({
       questionTwo: newQuestionTwo
     }),
-    className: "header"
+    className: "fourth-header"
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
     key: "editable",
     tagname: "p",
-    placeholder: "Answer 2",
+    placeholder: "Body Text",
     value: attributes.bodyAnswerTwo,
     onChange: newBodyAnswerTwo => setAttributes({
       bodyAnswerTwo: newBodyAnswerTwo
@@ -171,23 +162,14 @@ function Edit({
     className: "student-body-text"
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
     key: "editable",
-    tagname: "h3",
+    tagname: "h4",
     placeholder: "10 oktober 2021",
     value: attributes.date,
     onChange: newDate => setAttributes({
       date: newDate
     }),
-    className: "header"
-  }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
-    key: "editable",
-    tagname: "button",
-    placeholder: ">",
-    value: attributes.buttonRight,
-    onChange: newButtonRight => setAttributes({
-      buttonRight: newButtonRight
-    }),
-    className: "carousel-button"
-  })));
+    className: "fourth-header"
+  })))));
 }
 
 /***/ }),
@@ -235,7 +217,7 @@ __webpack_require__.r(__webpack_exports__);
   attributes: {
     title: {
       type: "string",
-      selector: "former-students-title"
+      selector: "h2"
     },
     imageUrl: {
       attribute: "src",
@@ -255,7 +237,7 @@ __webpack_require__.r(__webpack_exports__);
     },
     questionOne: {
       type: "string",
-      selector: "h3"
+      selector: "h4"
     },
     bodyAnswerOne: {
       type: "string",
@@ -263,7 +245,7 @@ __webpack_require__.r(__webpack_exports__);
     },
     questionTwo: {
       type: "string",
-      selector: "h3"
+      selector: "h4"
     },
     bodyAnswerTwo: {
       type: "string",
@@ -271,15 +253,7 @@ __webpack_require__.r(__webpack_exports__);
     },
     date: {
       type: "string",
-      selector: "h3"
-    },
-    buttonLeft: {
-      type: "string",
-      selector: "button"
-    },
-    buttonRight: {
-      type: "string",
-      selector: "button"
+      selector: "h4"
     }
   },
 
@@ -364,38 +338,30 @@ function save({
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("section", {
     className: "former-students-section"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h2", {
-    className: "former-students-title"
+    className: "secondary-header"
   }, attributes.title), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "former-students-wrapper"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
-    href: "#"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
-    className: "carousel-button"
-  }, attributes.buttonLeft)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "former-students-container"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "former-students-image-container"
   }, image(attributes.imageUrl, attributes.imageAlt)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "former-student-info"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
-    className: "header-big"
+    className: "third-header"
   }, attributes.studentName), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
     className: "student-body-text"
-  }, attributes.bodyProfession), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
-    className: "header"
+  }, attributes.bodyProfession), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h4", {
+    className: "fourth-header"
   }, attributes.questionOne), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
     className: "student-body-text"
-  }, attributes.bodyAnswerOne), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
-    className: "header"
+  }, attributes.bodyAnswerOne), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h4", {
+    className: "fourth-header"
   }, attributes.questionTwo), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
     className: "student-body-text"
-  }, attributes.bodyAnswerTwo), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
-    className: "header"
-  }, attributes.date))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
-    href: "#"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
-    className: "carousel-button"
-  }, attributes.buttonRight))));
+  }, attributes.bodyAnswerTwo), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h4", {
+    className: "fourth-header"
+  }, attributes.date)))));
 }
 
 /***/ }),

@@ -28,13 +28,9 @@ import save from "./save";
  */
 registerBlockType("create-block/hero", {
 	attributes: {
-		topTitle: {
+		title: {
 			type: "string",
 			selector: "h1",
-		},
-		bottomTitle: {
-			type: "string",
-			selector: "h2",
 		},
 		body: {
 			type: "string",

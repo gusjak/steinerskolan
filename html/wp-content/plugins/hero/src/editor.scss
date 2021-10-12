@@ -18,8 +18,7 @@ $black: #262526;
 	background-color: $beige;
 	color: $black;
 
-	.hero-top-title,
-	.hero-bottom-title {
+	.hero-title {
 		font-style: normal;
 		font-weight: bold;
 		font-size: 50px;
@@ -36,7 +35,7 @@ $black: #262526;
 		margin: 2rem 0;
 	}
 
-	.apply {
+	.hero-button {
 		display: flex;
 		justify-content: center;
 		align-items: center;

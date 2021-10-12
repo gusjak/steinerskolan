@@ -56,25 +56,13 @@ export default function Edit({ attributes, setAttributes }) {
 			<RichText
 				key="editable"
 				tagname="h2"
-				placeholder="Former Students Title"
+				placeholder="Section Title"
 				value={attributes.title}
 				onChange={(newTitle) => setAttributes({ title: newTitle })}
-				className="former-students-title"
+				className="secondary-header"
 			/>
 
 			<div className="former-students-wrapper">
-				{/* Left Button */}
-				<RichText
-					key="editable"
-					tagname="button"
-					placeholder="<"
-					value={attributes.buttonLeft}
-					onChange={(newButtonLeft) =>
-						setAttributes({ buttonLeft: newButtonLeft })
-					}
-					className="carousel-button"
-				/>
-
 				{/* Student Container */}
 				<div className="former-students-container">
 					<div className="former-students-image-container">
@@ -96,17 +84,17 @@ export default function Edit({ attributes, setAttributes }) {
 						<RichText
 							key="editable"
 							tagname="h3"
-							placeholder="Former Student's Name"
+							placeholder="Card Title"
 							value={attributes.studentName}
 							onChange={(newStudentName) =>
 								setAttributes({ studentName: newStudentName })
 							}
-							className="header-big"
+							className="third-header"
 						/>
 						<RichText
 							key="editable"
 							tagname="p"
-							placeholder="Student's Profession"
+							placeholder="Card Secondary Title"
 							value={attributes.bodyProfession}
 							onChange={(newBodyProfession) =>
 								setAttributes({ bodyProfession: newBodyProfession })
@@ -114,21 +102,21 @@ export default function Edit({ attributes, setAttributes }) {
 							className="student-body-text"
 						/>
 
-						{/* Question 1 + Answer 1 */}
+						{/* Header Title + Body Text */}
 						<RichText
 							key="editable"
-							tagname="h3"
-							placeholder="Question 1"
+							tagname="h4"
+							placeholder="Header Title"
 							value={attributes.questionOne}
 							onChange={(newQuestionOne) =>
 								setAttributes({ questionOne: newQuestionOne })
 							}
-							className="header"
+							className="fourth-header"
 						/>
 						<RichText
 							key="editable"
 							tagname="p"
-							placeholder="Answer 1"
+							placeholder="Body Text"
 							value={attributes.bodyAnswerOne}
 							onChange={(newBodyAnswerOne) =>
 								setAttributes({ bodyAnswerOne: newBodyAnswerOne })
@@ -136,21 +124,21 @@ export default function Edit({ attributes, setAttributes }) {
 							className="student-body-text"
 						/>
 
-						{/* Question 2 + Answer 2 */}
+						{/* Header Title + Body Text */}
 						<RichText
 							key="editable"
-							tagname="h3"
-							placeholder="Question 2"
+							tagname="h4"
+							placeholder="Header Title"
 							value={attributes.questionTwo}
 							onChange={(newQuestionTwo) =>
 								setAttributes({ questionTwo: newQuestionTwo })
 							}
-							className="header"
+							className="fourth-header"
 						/>
 						<RichText
 							key="editable"
 							tagname="p"
-							placeholder="Answer 2"
+							placeholder="Body Text"
 							value={attributes.bodyAnswerTwo}
 							onChange={(newBodyAnswerTwo) =>
 								setAttributes({ bodyAnswerTwo: newBodyAnswerTwo })
@@ -161,26 +149,14 @@ export default function Edit({ attributes, setAttributes }) {
 						{/* Date */}
 						<RichText
 							key="editable"
-							tagname="h3"
+							tagname="h4"
 							placeholder="10 oktober 2021"
 							value={attributes.date}
 							onChange={(newDate) => setAttributes({ date: newDate })}
-							className="header"
+							className="fourth-header"
 						/>
 					</div>
 				</div>
-
-				{/* Right Button */}
-				<RichText
-					key="editable"
-					tagname="button"
-					placeholder=">"
-					value={attributes.buttonRight}
-					onChange={(newButtonRight) =>
-						setAttributes({ buttonRight: newButtonRight })
-					}
-					className="carousel-button"
-				/>
 			</div>
 		</div>
 	);

@@ -29,7 +29,7 @@ registerBlockType("create-block/carousel-big", {
 	attributes: {
 		title: {
 			type: "string",
-			selector: "former-students-title",
+			selector: "h2",
 		},
 		imageUrl: {
 			attribute: "src",
@@ -49,7 +49,7 @@ registerBlockType("create-block/carousel-big", {
 		},
 		questionOne: {
 			type: "string",
-			selector: "h3",
+			selector: "h4",
 		},
 		bodyAnswerOne: {
 			type: "string",
@@ -57,7 +57,7 @@ registerBlockType("create-block/carousel-big", {
 		},
 		questionTwo: {
 			type: "string",
-			selector: "h3",
+			selector: "h4",
 		},
 		bodyAnswerTwo: {
 			type: "string",
@@ -65,15 +65,7 @@ registerBlockType("create-block/carousel-big", {
 		},
 		date: {
 			type: "string",
-			selector: "h3",
-		},
-		buttonLeft: {
-			type: "string",
-			selector: "button",
-		},
-		buttonRight: {
-			type: "string",
-			selector: "button",
+			selector: "h4",
 		},
 	},
 	/**

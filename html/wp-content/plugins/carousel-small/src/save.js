@@ -27,12 +27,12 @@ export default function save({ attributes }) {
 		if (!srcOne) return null;
 
 		if (altOne) {
-			return <img className="teacher-image-1" src={srcOne} alt={altOne} />;
+			return <img className="card-image-1" src={srcOne} alt={altOne} />;
 		}
 
 		// if no alt selected
 		return (
-			<img className="teacher-image-1" src={srcOne} alt="" aria-hidden="true" />
+			<img className="card-image-1" src={srcOne} alt="" aria-hidden="true" />
 		);
 	};
 
@@ -40,12 +40,12 @@ export default function save({ attributes }) {
 		if (!srcTwo) return null;
 
 		if (altTwo) {
-			return <img className="teacher-image-2" src={srcTwo} alt={altTwo} />;
+			return <img className="card-image-2" src={srcTwo} alt={altTwo} />;
 		}
 
 		// if no alt selected
 		return (
-			<img className="teacher-image-2" src={srcTwo} alt="" aria-hidden="true" />
+			<img className="card-image-2" src={srcTwo} alt="" aria-hidden="true" />
 		);
 	};
 
@@ -53,47 +53,34 @@ export default function save({ attributes }) {
 		if (!srcThree) return null;
 
 		if (altThree) {
-			return <img className="teacher-image-3" src={srcThree} alt={altThree} />;
+			return <img className="card-image-3" src={srcThree} alt={altThree} />;
 		}
 
 		// if no alt selected
 		return (
-			<img
-				className="teacher-image-3"
-				src={srcThree}
-				alt=""
-				aria-hidden="true"
-			/>
+			<img className="card-image-3" src={srcThree} alt="" aria-hidden="true" />
 		);
 	};
 	return (
-		<section className="teachers-section">
-			<h2 className="teachers-title">{attributes.title}</h2>
-			<p className="teachers-body-text">{attributes.body}</p>
+		<section className="cards-section">
+			<h2 className="secondary-header">{attributes.title}</h2>
+			<p className="body-text">{attributes.body}</p>
 
-			<div className="teachers-wrapper">
-				<a href="#">
-					<button className="carousel-button">{attributes.buttonLeft}</button>
-				</a>
-
-				<div className="teachers-card-1">
+			<div className="cards-wrapper">
+				<div className="card-1">
 					{imageOne(attributes.imageUrlOne, attributes.imageAltOne)}
-					<h3 className="teacher-title">{attributes.teacherNameOne}</h3>
+					<h3 className="third-header">{attributes.teacherNameOne}</h3>
 				</div>
 
-				<div className="teachers-card-2">
+				<div className="card-2">
 					{imageTwo(attributes.imageUrlTwo, attributes.imageAltTwo)}
-					<h3 className="teacher-title">{attributes.teacherNameTwo}</h3>
+					<h3 className="third-header">{attributes.teacherNameTwo}</h3>
 				</div>
 
-				<div className="teachers-card-3">
+				<div className="card-3">
 					{imageThree(attributes.imageUrlThree, attributes.imageAltThree)}
-					<h3 className="teacher-title">{attributes.teacherNameThree}</h3>
+					<h3 className="third-header">{attributes.teacherNameThree}</h3>
 				</div>
-
-				<a href="#">
-					<button className="carousel-button">{attributes.buttonRight}</button>
-				</a>
 			</div>
 		</section>
 	);

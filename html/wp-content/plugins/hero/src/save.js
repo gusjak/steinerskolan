@@ -3,7 +3,7 @@
  *
  * @see https://developer.wordpress.org/block-editor/packages/packages-i18n/
  */
-import { __ } from '@wordpress/i18n';
+import { __ } from "@wordpress/i18n";
 
 /**
  * React hook that is used to mark the block wrapper element.
@@ -11,7 +11,7 @@ import { __ } from '@wordpress/i18n';
  *
  * @see https://developer.wordpress.org/block-editor/packages/packages-block-editor/#useBlockProps
  */
-import { useBlockProps } from '@wordpress/block-editor';
+import { useBlockProps } from "@wordpress/block-editor";
 
 /**
  * The save function defines the way in which the different attributes should
@@ -23,15 +23,16 @@ import { useBlockProps } from '@wordpress/block-editor';
  * @return {WPElement} Element to render.
  */
 export default function save({ attributes }) {
-	const { topTitle, bottomTitle, body, buttonText } = attributes;	
 	return (
 		<section className="hero-section">
-			<h1 className="hero-top-title">{topTitle}</h1>
-			<h2 className="hero-bottom-title">{bottomTitle}</h2>
-			<p className="hero-text">{body}</p>
-			<a href="https://portal.idunsoft.se/#ansokanomplats-gbg/">
-				<button className="hero-button">{buttonText}</button>
-			</a>
+			<h1 className="hero-title">{attributes.title}</h1>
+			<p className="hero-text">{attributes.body}</p>
+
+			<button className="hero-button">
+				<a href="https://portal.idunsoft.se/#ansokanomplats-gbg/">
+					{attributes.buttonText}
+				</a>
+			</button>
 		</section>
 	);
 }

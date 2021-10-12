@@ -59,21 +59,21 @@ function Edit({
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
     key: "editable",
     tagname: "h1",
-    placeholder: "About school title",
+    placeholder: "Title",
     value: attributes.title,
     onChange: newTitle => setAttributes({
       title: newTitle
     }),
-    className: "about-school-title"
+    className: "hero-title"
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
     key: "editable",
     tagname: "p",
-    placeholder: "About school text",
+    placeholder: "Text",
     value: attributes.body,
     onChange: newBody => setAttributes({
       body: newBody
     }),
-    className: "about-school-text"
+    className: "hero-text"
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "button-row"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
@@ -84,7 +84,7 @@ function Edit({
     onChange: newButtonTextOne => setAttributes({
       buttonTextOne: newButtonTextOne
     }),
-    className: "scroll-button"
+    className: "hero-button"
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
     key: "editable",
     tagname: "button",
@@ -93,7 +93,7 @@ function Edit({
     onChange: newButtonTextTwo => setAttributes({
       buttonTextTwo: newButtonTextTwo
     }),
-    className: "scroll-button"
+    className: "hero-button"
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
     key: "editable",
     tagname: "button",
@@ -102,7 +102,7 @@ function Edit({
     onChange: newButtonTextThree => setAttributes({
       buttonTextThree: newButtonTextThree
     }),
-    className: "scroll-button"
+    className: "hero-button"
   })));
 }
 
@@ -230,25 +230,25 @@ function save({
   attributes
 }) {
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("section", {
-    className: "about-school-section"
+    className: "hero-section"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h1", {
-    className: "about-school-title"
+    className: "hero-title"
   }, attributes.title), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
-    className: "about-school-text"
+    className: "hero-text"
   }, attributes.body), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "button-row"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+    className: "hero-button"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
-    href: "#"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
-    className: "scroll-button"
-  }, attributes.buttonTextOne)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
-    href: "#"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
-    className: "scroll-button"
-  }, attributes.buttonTextTwo)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
-    href: "#"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
-    className: "scroll-button"
+    href: ""
+  }, attributes.buttonTextOne)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+    className: "hero-button"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+    href: ""
+  }, attributes.buttonTextTwo)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+    className: "hero-button"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+    href: ""
   }, attributes.buttonTextThree))));
 }
 

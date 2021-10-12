@@ -1,0 +1,51 @@
+/*!****************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ./node_modules/css-loader/dist/cjs.js??ruleSet[1].rules[3].use[1]!./node_modules/postcss-loader/dist/cjs.js??ruleSet[1].rules[3].use[2]!./node_modules/sass-loader/dist/cjs.js??ruleSet[1].rules[3].use[3]!./src/editor.scss ***!
+  \****************************************************************************************************************************************************************************************************************************************/
+/**
+ * The following styles get applied inside the editor only.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+.wp-block-create-block-hero-two-buttons {
+  height: auto;
+  padding: 10vh 2vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  background-color: #f7f6f0;
+  color: #262526;
+}
+.wp-block-create-block-hero-two-buttons .hero-title {
+  font-style: normal;
+  font-weight: bold;
+  font-size: 50px;
+  padding-bottom: 0;
+  margin-bottom: 0;
+  width: 50vw;
+}
+.wp-block-create-block-hero-two-buttons .hero-text {
+  max-width: 75vw;
+  font-size: 20px;
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
+  margin: 2rem 0;
+}
+.wp-block-create-block-hero-two-buttons .button-row {
+  display: flex;
+  flex-direction: row;
+}
+.wp-block-create-block-hero-two-buttons .hero-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  width: 180px;
+  height: 35px;
+  margin-right: 2rem;
+  border-radius: 50px;
+  border: 0.5px solid #262526;
+  background-color: white;
+}
+
+/*# sourceMappingURL=index.css.map*/

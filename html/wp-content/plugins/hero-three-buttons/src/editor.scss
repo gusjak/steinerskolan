@@ -9,8 +9,8 @@ $white: #ffffff;
 $black: #262526;
 
 .wp-block-create-block-hero-three-buttons {
-	height: 92vh;
-	padding: 0 2rem;
+	height: auto;
+	padding: 10vh 2vw;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
@@ -18,7 +18,7 @@ $black: #262526;
 	background-color: $beige;
 	color: $black;
 
-	.about-school-title {
+	.hero-title {
 		font-style: normal;
 		font-weight: bold;
 		font-size: 50px;
@@ -27,7 +27,7 @@ $black: #262526;
 		width: 50vw;
 	}
 
-	.about-school-text {
+	.hero-text {
 		max-width: 75vw;
 		font-size: 20px;
 		line-height: 1.5;
@@ -40,7 +40,7 @@ $black: #262526;
 		flex-direction: row;
 	}
 
-	.scroll-button {
+	.hero-button {
 		display: flex;
 		justify-content: center;
 		align-items: center;

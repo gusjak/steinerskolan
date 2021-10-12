@@ -7,8 +7,8 @@
  * Replace them with your own styles or remove the file completely.
  */
 .wp-block-create-block-hero-three-buttons {
-  height: 92vh;
-  padding: 0 2rem;
+  height: auto;
+  padding: 10vh 2vw;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -16,7 +16,7 @@
   background-color: #f7f6f0;
   color: #262526;
 }
-.wp-block-create-block-hero-three-buttons .about-school-title {
+.wp-block-create-block-hero-three-buttons .hero-title {
   font-style: normal;
   font-weight: bold;
   font-size: 50px;
@@ -24,7 +24,7 @@
   margin-bottom: 0;
   width: 50vw;
 }
-.wp-block-create-block-hero-three-buttons .about-school-text {
+.wp-block-create-block-hero-three-buttons .hero-text {
   max-width: 75vw;
   font-size: 20px;
   line-height: 1.5;
@@ -35,7 +35,7 @@
   display: flex;
   flex-direction: row;
 }
-.wp-block-create-block-hero-three-buttons .scroll-button {
+.wp-block-create-block-hero-three-buttons .hero-button {
   display: flex;
   justify-content: center;
   align-items: center;

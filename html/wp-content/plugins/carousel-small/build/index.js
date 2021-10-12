@@ -64,7 +64,7 @@ function Edit({
       return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
         src: attributes.imageUrlOne,
         onClick: openEventOne,
-        className: "teacher-image-1"
+        className: "card-image-1"
       });
     } else {
       return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -81,7 +81,7 @@ function Edit({
       return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
         src: attributes.imageUrlTwo,
         onClick: openEventTwo,
-        className: "teacher-image-2"
+        className: "card-image-2"
       });
     } else {
       return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -98,7 +98,7 @@ function Edit({
       return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
         src: attributes.imageUrlThree,
         onClick: openEventThree,
-        className: "teacher-image-3"
+        className: "card-image-3"
       });
     } else {
       return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -113,34 +113,25 @@ function Edit({
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
     key: "editable",
     tagname: "h2",
-    placeholder: "Teachers Title",
+    placeholder: "Section Title",
     value: attributes.title,
     onChange: newTitle => setAttributes({
       title: newTitle
     }),
-    className: "teachers-title"
+    className: "secondary-header"
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
     key: "editable",
     tagname: "p",
-    placeholder: "Teachers Body Text",
+    placeholder: "Section Text",
     value: attributes.body,
     onChange: newBody => setAttributes({
       body: newBody
     }),
-    className: "teachers-body-text"
+    className: "body-text"
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "teachers-wrapper"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
-    key: "editable",
-    tagname: "button",
-    placeholder: "<",
-    value: attributes.buttonLeft,
-    onChange: newButtonLeft => setAttributes({
-      buttonLeft: newButtonLeft
-    }),
-    className: "carousel-button"
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "teachers-card-1"
+    className: "cards-wrapper"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "card-1"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUpload, {
     onSelect: media => {
       setAttributes({
@@ -156,14 +147,14 @@ function Edit({
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
     key: "editable",
     tagname: "h3",
-    placeholder: "Teacher Title 1",
-    value: attributes.teacherNameOne,
-    onChange: newTeacherNameOne => setAttributes({
-      teacherNameOne: newTeacherNameOne
+    placeholder: "Card Title 1",
+    value: attributes.cardTitleOne,
+    onChange: newcardTitleOne => setAttributes({
+      cardTitleOne: newcardTitleOne
     }),
-    className: "teacher-title"
+    className: "third-header"
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "teachers-card-2"
+    className: "card-2"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUpload, {
     onSelect: media => {
       setAttributes({
@@ -179,14 +170,14 @@ function Edit({
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
     key: "editable",
     tagname: "h3",
-    placeholder: "Teacher Title 2",
-    value: attributes.teacherNameTwo,
-    onChange: newTeacherNameTwo => setAttributes({
-      teacherNameTwo: newTeacherNameTwo
+    placeholder: "Card Title 2",
+    value: attributes.cardTitleTwo,
+    onChange: newcardTitleTwo => setAttributes({
+      cardTitleTwo: newcardTitleTwo
     }),
-    className: "teacher-title"
+    className: "third-header"
   })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "teachers-card-3"
+    className: "card-3"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUpload, {
     onSelect: media => {
       setAttributes({
@@ -202,22 +193,13 @@ function Edit({
   }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
     key: "editable",
     tagname: "h3",
-    placeholder: "Teacher Title 3",
-    value: attributes.teacherNameThree,
-    onChange: newTeacherNameThree => setAttributes({
-      teacherNameThree: newTeacherNameThree
+    placeholder: "Card Title 3",
+    value: attributes.cardTitleThree,
+    onChange: newcardTitleThree => setAttributes({
+      cardTitleThree: newcardTitleThree
     }),
-    className: "teacher-title"
-  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
-    key: "editable",
-    tagname: "button",
-    placeholder: ">",
-    value: attributes.buttonRight,
-    onChange: newButtonRight => setAttributes({
-      buttonRight: newButtonRight
-    }),
-    className: "carousel-button"
-  })));
+    className: "third-header"
+  }))));
 }
 
 /***/ }),
@@ -273,47 +255,39 @@ __webpack_require__.r(__webpack_exports__);
     },
     imageUrlOne: {
       attribute: "src",
-      selector: "teacher-image-1"
+      selector: "card-image-1"
     },
     imageAltOne: {
       attribute: "alt",
-      selector: "teacher-image-1"
+      selector: "card-image-1"
     },
     imageUrlTwo: {
       attribute: "src",
-      selector: "teacher-image-2"
+      selector: "card-image-2"
     },
     imageAltTwo: {
       attribute: "alt",
-      selector: "teacher-image-2"
+      selector: "card-image-2"
     },
     imageUrlThree: {
       attribute: "src",
-      selector: "teacher-image-3"
+      selector: "card-image-3"
     },
     imageAltThree: {
       attribute: "alt",
-      selector: "teacher-image-3"
+      selector: "card-image-3"
     },
-    teacherNameOne: {
+    cardTitleOne: {
       type: "string",
       selector: "h3"
     },
-    teacherNameTwo: {
+    cardTitleTwo: {
       type: "string",
       selector: "h3"
     },
-    teacherNameThree: {
+    cardTitleThree: {
       type: "string",
       selector: "h3"
-    },
-    buttonLeft: {
-      type: "string",
-      selector: "button"
-    },
-    buttonRight: {
-      type: "string",
-      selector: "button"
     }
   },
 
@@ -380,7 +354,7 @@ function save({
 
     if (altOne) {
       return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-        className: "teacher-image-1",
+        className: "card-image-1",
         src: srcOne,
         alt: altOne
       });
@@ -388,7 +362,7 @@ function save({
 
 
     return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-      className: "teacher-image-1",
+      className: "card-image-1",
       src: srcOne,
       alt: "",
       "aria-hidden": "true"
@@ -400,7 +374,7 @@ function save({
 
     if (altTwo) {
       return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-        className: "teacher-image-2",
+        className: "card-image-2",
         src: srcTwo,
         alt: altTwo
       });
@@ -408,7 +382,7 @@ function save({
 
 
     return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-      className: "teacher-image-2",
+      className: "card-image-2",
       src: srcTwo,
       alt: "",
       "aria-hidden": "true"
@@ -420,7 +394,7 @@ function save({
 
     if (altThree) {
       return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-        className: "teacher-image-3",
+        className: "card-image-3",
         src: srcThree,
         alt: altThree
       });
@@ -428,7 +402,7 @@ function save({
 
 
     return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-      className: "teacher-image-3",
+      className: "card-image-3",
       src: srcThree,
       alt: "",
       "aria-hidden": "true"
@@ -436,34 +410,26 @@ function save({
   };
 
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("section", {
-    className: "teachers-section"
+    className: "cards-section"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h2", {
-    className: "teachers-title"
+    className: "secondary-header"
   }, attributes.title), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
-    className: "teachers-body-text"
+    className: "body-text"
   }, attributes.body), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "teachers-wrapper"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
-    href: "#"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
-    className: "carousel-button"
-  }, attributes.buttonLeft)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "teachers-card-1"
+    className: "cards-wrapper"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "card-1"
   }, imageOne(attributes.imageUrlOne, attributes.imageAltOne), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
-    className: "teacher-title"
+    className: "third-header"
   }, attributes.teacherNameOne)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "teachers-card-2"
+    className: "card-2"
   }, imageTwo(attributes.imageUrlTwo, attributes.imageAltTwo), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
-    className: "teacher-title"
+    className: "third-header"
   }, attributes.teacherNameTwo)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "teachers-card-3"
+    className: "card-3"
   }, imageThree(attributes.imageUrlThree, attributes.imageAltThree), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h3", {
-    className: "teacher-title"
-  }, attributes.teacherNameThree)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
-    href: "#"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
-    className: "carousel-button"
-  }, attributes.buttonRight))));
+    className: "third-header"
+  }, attributes.teacherNameThree))));
 }
 
 /***/ }),
