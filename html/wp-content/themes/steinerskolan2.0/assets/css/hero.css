@@ -132,6 +132,15 @@
   margin: 0 2rem 2rem 2rem;
 }
 
+.box-text-kitchen {
+  font-size: 1.1;
+  font-weight: 300;
+  line-height: 1.2;
+  letter-spacing: 0.1rem;
+  width: 85%;
+  margin: 2rem 1.5rem;
+}
+
 .box-container {
   display: flex;
   height: 100%;
