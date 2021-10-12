@@ -30,9 +30,11 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('footer', get_template_directory_uri() . '/assets/css/footer.css', true, '1.1', 'all');
     wp_enqueue_style('landing', get_template_directory_uri() . '/assets/css/landing.css', true, '1.1', 'all');
     wp_enqueue_style('about', get_template_directory_uri() . '/assets/css/about.css', true, '1.1', 'all');
+    wp_enqueue_style('work', get_template_directory_uri() . '/assets/css/work.css', true, '1.1', 'all');
     wp_enqueue_style('kitchen', get_template_directory_uri() . '/assets/css/kitchen.css', true, '1.1', 'all');
 
     wp_enqueue_script('header', get_template_directory_uri() . '/assets/js/header.js', '', '', true);
+    wp_enqueue_script('drop-down', get_template_directory_uri() . '/assets/js/drop-down.js', '', '', true);
 });
 
 
