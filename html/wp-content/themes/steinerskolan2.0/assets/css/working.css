@@ -212,3 +212,103 @@
   font-size: 20px;
   line-height: 30px;
 }
+
+.preschool-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10vh 0;
+  padding: 10vh 0;
+}
+
+.preschool-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  height: 500px;
+  width: 100%;
+  max-width: 1440px;
+  margin: 80px;
+}
+
+.preschool-left-box {
+  display: flex;
+  max-height: 100%;
+  max-width: 50%;
+  height: 100%;
+  width: 50%;
+  flex-direction: column;
+  align-items: center;
+}
+.preschool-right-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  width: 50%;
+}
+.preschool-images {
+  height: 500px;
+  width: 383px;
+  border: 1px solid black;
+}
+.secondary-header {
+  font-size: 52.36px;
+  line-height: 100%;
+}
+.preschool-left-box p {
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  line-height: 160%;
+  /* or 32px */
+  margin-bottom: 30px;
+  letter-spacing: 0.02em;
+}
+
+.preschool-image-1,
+.preschool-text-content-1 {
+  display: flex;
+}
+.preschool-image-2,
+.preschool-text-content-2 {
+  display: none;
+}
+.preschool-image-3,
+.preschool-text-content-3 {
+  display: none;
+}
+.preschool-images img {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+
+.preschool-buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 50px;
+  padding: 30px;
+  width: 100%;
+  height: 300px;
+}
+.preschool-buttons .preschool-button-1 {
+  background-color: black;
+  color: white;
+}
+
+.preschool-buttons button {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: white;
+  border: 0.5px solid black;
+  margin-right: 2px;
+  margin-left: 5px;
+}
+
+.preschool-buttons button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}

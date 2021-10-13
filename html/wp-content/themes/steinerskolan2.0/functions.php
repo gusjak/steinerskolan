@@ -31,7 +31,7 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('landing', get_template_directory_uri() . '/assets/css/landing.css', true, '1.1', 'all');
     wp_enqueue_style('about-school', get_template_directory_uri() . '/assets/css/about-school.css', true, '1.1', 'all');
     wp_enqueue_style('waldorf', get_template_directory_uri() . '/assets/css/waldorf.css', true, '1.1', 'all');
-    wp_enqueue_style('work', get_template_directory_uri() . '/assets/css/work.css', true, '1.1', 'all');
+    wp_enqueue_style('working', get_template_directory_uri() . '/assets/css/working.css', true, '1.1', 'all');
     wp_enqueue_style('kitchen', get_template_directory_uri() . '/assets/css/kitchen.css', true, '1.1', 'all');
     wp_enqueue_style('parents', get_template_directory_uri() . '/assets/css/parents.css', true, '1.1', 'all');
 
@@ -47,6 +47,7 @@ function my_scripts()
 
     if (is_page(78)) {
         wp_enqueue_script('drop-down-work', get_template_directory_uri() . '/assets/js/drop-down-work.js', array(), '1.0.0', true);
+        wp_enqueue_script('preschool', get_template_directory_uri() . '/assets/js/preschool.js', array(), '1.0.0', true);
     }
 
     if (is_page(784)) {
