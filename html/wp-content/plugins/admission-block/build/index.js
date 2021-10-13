@@ -226,15 +226,6 @@ function Edit({
       rightBodyTwo: newRightBodyTwo
     }),
     className: "body-text"
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
-    key: "editable",
-    tagname: "button",
-    placeholder: "Button Text",
-    value: attributes.buttonOne,
-    onChange: newButtonOne => setAttributes({
-      buttonOne: newButtonOne
-    }),
-    className: "read-more-button"
   }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "box"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -280,6 +271,15 @@ function Edit({
       rightBodyThree: newRightBodyThree
     }),
     className: "body-text"
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
+    key: "editable",
+    tagname: "button",
+    placeholder: "Button Text",
+    value: attributes.buttonOne,
+    onChange: newButtonOne => setAttributes({
+      buttonOne: newButtonOne
+    }),
+    className: "read-more-button"
   }))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "box"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
@@ -378,7 +378,7 @@ __webpack_require__.r(__webpack_exports__);
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
 
-(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)("create-block/how-we-work", {
+(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)("create-block/admission-block", {
   attributes: {
     mainTitle: {
       type: "string",
@@ -640,11 +640,7 @@ function save({
     className: "fourth-header"
   }, attributes.rightTitleTwo), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
     className: "body-text"
-  }, attributes.rightBodyTwo), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
-    class: "read-more-button"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
-    href: ""
-  }, attributes.buttonOne)))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, attributes.rightBodyTwo))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "box"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "box-left"
@@ -656,7 +652,11 @@ function save({
     className: "fourth-header"
   }, attributes.rightTitleThree), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
     className: "body-text"
-  }, attributes.rightBodyThree))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+  }, attributes.rightBodyThree), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("button", {
+    class: "read-more-button"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("a", {
+    href: ""
+  }, attributes.buttonOne)))), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "box"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     className: "box-left"
@@ -906,7 +906,7 @@ module.exports = window["wp"]["i18n"];
 /******/ 			return __webpack_require__.O(result);
 /******/ 		}
 /******/ 		
-/******/ 		var chunkLoadingGlobal = self["webpackChunkhow_we_work"] = self["webpackChunkhow_we_work"] || [];
+/******/ 		var chunkLoadingGlobal = self["webpackChunkadmission_block"] = self["webpackChunkadmission_block"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	}();

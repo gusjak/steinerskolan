@@ -211,16 +211,6 @@ export default function Edit({ attributes, setAttributes }) {
 						}
 						className="body-text"
 					/>
-					<RichText
-						key="editable"
-						tagname="button"
-						placeholder="Button Text"
-						value={attributes.buttonOne}
-						onChange={(newButtonOne) =>
-							setAttributes({ buttonOne: newButtonOne })
-						}
-						className="read-more-button"
-					/>
 				</div>
 			</div>
 
@@ -270,6 +260,16 @@ export default function Edit({ attributes, setAttributes }) {
 							setAttributes({ rightBodyThree: newRightBodyThree })
 						}
 						className="body-text"
+					/>
+					<RichText
+						key="editable"
+						tagname="button"
+						placeholder="Button Text"
+						value={attributes.buttonOne}
+						onChange={(newButtonOne) =>
+							setAttributes({ buttonOne: newButtonOne })
+						}
+						className="read-more-button"
 					/>
 				</div>
 			</div>

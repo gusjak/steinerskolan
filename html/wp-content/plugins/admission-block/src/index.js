@@ -25,7 +25,7 @@ import save from "./save";
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
-registerBlockType("create-block/how-we-work", {
+registerBlockType("create-block/admission-block", {
 	attributes: {
 		mainTitle: {
 			type: "string",

@@ -100,9 +100,6 @@ export default function save({ attributes }) {
 				<div className="box-right">
 					<h4 className="fourth-header">{attributes.rightTitleTwo}</h4>
 					<p className="body-text">{attributes.rightBodyTwo}</p>
-					<button class="read-more-button">
-						<a href="">{attributes.buttonOne}</a>
-					</button>
 				</div>
 			</div>
 
@@ -116,6 +113,9 @@ export default function save({ attributes }) {
 				<div className="box-right">
 					<h4 className="fourth-header">{attributes.rightTitleThree}</h4>
 					<p className="body-text">{attributes.rightBodyThree}</p>
+					<button class="read-more-button">
+						<a href="">{attributes.buttonOne}</a>
+					</button>
 				</div>
 			</div>
 
