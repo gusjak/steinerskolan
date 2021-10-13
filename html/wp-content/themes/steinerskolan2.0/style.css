@@ -127,6 +127,11 @@ p {
   cursor: pointer;
 }
 
+.button-row {
+  display: flex;
+  flex-direction: row;
+}
+
 button a {
   text-decoration: none;
   color: var(--main-color_black);

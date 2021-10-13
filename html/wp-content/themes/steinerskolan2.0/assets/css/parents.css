@@ -1,0 +1,19 @@
+.dates-section {
+  margin: 10vh 10vw;
+}
+.dates-section ul {
+  padding-top: 2rem;
+}
+.dates-section li {
+  list-style: none;
+  max-width: 850px;
+  margin: 0 0 2.5rem 1.5rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: 0.1rem;
+}
+
+.dates-section li span {
+  font-size: 1rem;
+  font-weight: 700;
+}

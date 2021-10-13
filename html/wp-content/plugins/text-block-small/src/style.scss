@@ -1,0 +1,21 @@
+/**
+ * The following styles get applied both on the front of your site
+ * and in the editor.
+ *
+ * Replace them with your own styles or remove the file completely.
+ */
+
+.wp-block-create-block-text-block-small {
+	background-color: #21759b;
+	color: #fff;
+	padding: 2px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	.third-header {
+		font-size: 1.5rem;
+		font-weight: 500;
+		letter-spacing: 1px;
+	}
+}

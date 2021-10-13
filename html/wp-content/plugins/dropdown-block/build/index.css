@@ -8,7 +8,9 @@
  */
 .wp-block-create-block-dropdown-block {
   background-color: #f7f6f0;
+  color: #262526;
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
   margin: 10vh 0;
@@ -16,13 +18,17 @@
 }
 
 .secondary-header {
-  display: none;
+  font-size: 3rem;
+  margin-bottom: 3rem;
+  font-weight: 400;
 }
 
 .drop-drop-down-wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 70vw;
+  width: 70vw;
 }
 
 .drop-down-bar-1,
@@ -34,7 +40,7 @@
 .drop-down-bar-7,
 .drop-down-bar-8,
 .drop-down-bar-9 {
-  border: 1px solid black;
+  border: 1px solid #262526;
   width: 100%;
   height: 80px;
   display: flex;
@@ -132,7 +138,7 @@
   background-color: white;
   border-radius: 50%;
   margin-right: 30px;
-  border: 0.5px solid black;
+  border: 0.5px solid #262526;
 }
 
 .drop-down-content-box-1,
@@ -144,7 +150,7 @@
 .drop-down-content-box-7,
 .drop-down-content-box-8,
 .drop-down-content-box-9 {
-  border: 0.5px solid black;
+  border: 0.5px solid #262526;
   width: 100%;
   height: auto;
   display: flex;

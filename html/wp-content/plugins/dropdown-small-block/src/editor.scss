@@ -8,9 +8,11 @@ $beige: #f7f6f0;
 $white: #ffffff;
 $black: #262526;
 
-.wp-block-create-block-dropdown-block {
+.wp-block-create-block-dropdown-small-block {
 	background-color: $beige;
+	color: $black;
 	display: flex;
+	flex-direction: column;
 	align-items: center;
 	justify-content: center;
 	margin: 10vh 0;
@@ -18,7 +20,9 @@ $black: #262526;
 }
 
 .secondary-header {
-	display: none;
+	font-size: 3rem;
+	margin-bottom: 3rem;
+	font-weight: 400;
 }
 
 .drop-drop-down-wrapper {
@@ -27,13 +31,13 @@ $black: #262526;
 	align-items: center;
 }
 
-.drop-down-bar-1,
-.drop-down-bar-2,
-.drop-down-bar-3,
-.drop-down-bar-4,
-.drop-down-bar-5,
-.drop-down-bar-6 {
-	border: 1px solid black;
+.drop-down-bar-about-1,
+.drop-down-bar-about-2,
+.drop-down-bar-about-3,
+.drop-down-bar-about-4,
+.drop-down-bar-about-5,
+.drop-down-bar-about-6 {
+	border: 1px solid $black;
 	width: 100%;
 	height: 80px;
 	display: flex;
@@ -42,12 +46,12 @@ $black: #262526;
 	margin-top: 4px;
 }
 
-.drop-down-bar-2:hover,
-.drop-down-bar-1:hover,
-.drop-down-bar-3:hover,
-.drop-down-bar-4:hover,
-.drop-down-bar-5:hover,
-.drop-down-bar-6:hover {
+.drop-down-bar-about-2:hover,
+.drop-down-bar-about-1:hover,
+.drop-down-bar-about-3:hover,
+.drop-down-bar-about-4:hover,
+.drop-down-bar-about-5:hover,
+.drop-down-bar-about-6:hover {
 	cursor: pointer;
 }
 
@@ -117,16 +121,16 @@ $black: #262526;
 	background-color: white;
 	border-radius: 50%;
 	margin-right: 30px;
-	border: 0.5px solid black;
+	border: 0.5px solid $black;
 }
 
-.drop-down-content-box-1,
-.drop-down-content-box-2,
-.drop-down-content-box-3,
-.drop-down-content-box-4,
-.drop-down-content-box-5,
-.drop-down-content-box-6 {
-	border: 0.5px solid black;
+.drop-down-content-box-about-1,
+.drop-down-content-box-about-2,
+.drop-down-content-box-about-3,
+.drop-down-content-box-about-4,
+.drop-down-content-box-about-5,
+.drop-down-content-box-about-6 {
+	border: 0.5px solid $black;
 	width: 100%;
 	height: auto;
 	display: flex;
@@ -135,12 +139,12 @@ $black: #262526;
 	// display: none;
 }
 
-.drop-down-content-box-1 p,
-.drop-down-content-box-2 p,
-.drop-down-content-box-3 p,
-.drop-down-content-box-4 p,
-.drop-down-content-box-5 p,
-.drop-down-content-box-6 p {
+.drop-down-content-box-about-1 p,
+.drop-down-content-box-about-2 p,
+.drop-down-content-box-about-3 p,
+.drop-down-content-box-about-4 p,
+.drop-down-content-box-about-5 p,
+.drop-down-content-box-about-6 p {
 	font-style: normal;
 	font-weight: normal;
 	font-size: 20px;

@@ -29,14 +29,15 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('header', get_template_directory_uri() . '/assets/css/header.css', true, '1.1', 'all');
     wp_enqueue_style('footer', get_template_directory_uri() . '/assets/css/footer.css', true, '1.1', 'all');
     wp_enqueue_style('landing', get_template_directory_uri() . '/assets/css/landing.css', true, '1.1', 'all');
-    wp_enqueue_style('about', get_template_directory_uri() . '/assets/css/about.css', true, '1.1', 'all');
+    wp_enqueue_style('about-school', get_template_directory_uri() . '/assets/css/about-school.css', true, '1.1', 'all');
     wp_enqueue_style('work', get_template_directory_uri() . '/assets/css/work.css', true, '1.1', 'all');
     wp_enqueue_style('kitchen', get_template_directory_uri() . '/assets/css/kitchen.css', true, '1.1', 'all');
+    wp_enqueue_style('parents', get_template_directory_uri() . '/assets/css/parents.css', true, '1.1', 'all');
+
 
     wp_enqueue_script('header', get_template_directory_uri() . '/assets/js/header.js', '', '', true);
     wp_enqueue_script('drop-down', get_template_directory_uri() . '/assets/js/drop-down.js', '', '', true);
 });
-
 
 require get_template_directory() . '/post-types/arskurs.php';
 require get_template_directory() . '/taxonomies/tool.php';
