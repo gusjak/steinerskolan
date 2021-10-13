@@ -8,6 +8,7 @@ header {
   justify-content: space-between;
   align-items: center;
   background-color: var(--header-bg-color);
+  z-index: 1000;
 }
 
 .site-logo-text {

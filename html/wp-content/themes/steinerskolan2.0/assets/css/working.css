@@ -154,3 +154,61 @@
   cursor: pointer;
   background-color: var(--main-color_black);
 }
+
+.learning-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+}
+
+.box {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 64px 145px;
+  border: 0.5px solid black;
+}
+
+.box-left {
+  width: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.box-right {
+  width: 50%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.learning-section h3 {
+  font-size: 84px;
+  line-height: 100%;
+  font-weight: normal;
+  font-style: normal;
+  z-index: 5;
+  padding-right: 300px;
+}
+
+.learning-section img {
+  position: absolute;
+  left: 20vw;
+  z-index: -5;
+}
+
+.learning-section h4 {
+  margin-bottom: 2rem;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32.36px;
+  line-height: 100%;
+}
+
+.learning-section p {
+  font-weight: 300;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 30px;
+}
