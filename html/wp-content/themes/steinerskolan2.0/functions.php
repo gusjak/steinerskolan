@@ -30,14 +30,33 @@ add_action('wp_enqueue_scripts', function () {
     wp_enqueue_style('footer', get_template_directory_uri() . '/assets/css/footer.css', true, '1.1', 'all');
     wp_enqueue_style('landing', get_template_directory_uri() . '/assets/css/landing.css', true, '1.1', 'all');
     wp_enqueue_style('about-school', get_template_directory_uri() . '/assets/css/about-school.css', true, '1.1', 'all');
+    wp_enqueue_style('waldorf', get_template_directory_uri() . '/assets/css/waldorf.css', true, '1.1', 'all');
     wp_enqueue_style('work', get_template_directory_uri() . '/assets/css/work.css', true, '1.1', 'all');
     wp_enqueue_style('kitchen', get_template_directory_uri() . '/assets/css/kitchen.css', true, '1.1', 'all');
     wp_enqueue_style('parents', get_template_directory_uri() . '/assets/css/parents.css', true, '1.1', 'all');
 
-
+    // Global scripts
     wp_enqueue_script('header', get_template_directory_uri() . '/assets/js/header.js', '', '', true);
-    wp_enqueue_script('drop-down', get_template_directory_uri() . '/assets/js/drop-down.js', '', '', true);
 });
+
+function my_scripts()
+{
+    if (is_page(76)) {
+        wp_enqueue_script('drop-down-about', get_template_directory_uri() . '/assets/js/drop-down-about.js', array(), '1.0.0', true);
+    }
+
+    if (is_page(78)) {
+        wp_enqueue_script('drop-down-work', get_template_directory_uri() . '/assets/js/drop-down-work.js', array(), '1.0.0', true);
+    }
+
+    if (is_page(784)) {
+        wp_enqueue_script('drop-down-waldorf', get_template_directory_uri() . '/assets/js/drop-down-waldorf.js', array(), '1.0.0', true);
+    }
+}
+add_action('wp_enqueue_scripts', 'my_scripts');
+
+
+add_action('wp_enqueue_scripts', 'load_custom_js');
 
 require get_template_directory() . '/post-types/arskurs.php';
 require get_template_directory() . '/taxonomies/tool.php';

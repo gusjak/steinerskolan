@@ -22,7 +22,7 @@
 .drop-down-bar-7,
 .drop-down-bar-8,
 .drop-down-bar-9 {
-  border: 1px solid black;
+  border: 1px solid var(--main-color_black);
   width: 100%;
   height: 80px;
   display: flex;
@@ -112,7 +112,7 @@
   background-color: white;
   border-radius: 50%;
   margin-right: 30px;
-  border: 0.5px solid black;
+  border: 0.5px solid var(--main-color_black);
 }
 
 .drop-down-content-box-1,
@@ -124,7 +124,7 @@
 .drop-down-content-box-7,
 .drop-down-content-box-8,
 .drop-down-content-box-9 {
-  border: 0.5px solid black;
+  border: 0.5px solid var(--main-color_black);
   width: 100%;
   height: 416px;
   display: flex;
@@ -167,7 +167,7 @@
   flex-direction: row;
   align-items: center;
   padding: 64px 145px;
-  border: 0.5px solid black;
+  border: 0.5px solid var(--main-color_black);
 }
 
 .box-left {

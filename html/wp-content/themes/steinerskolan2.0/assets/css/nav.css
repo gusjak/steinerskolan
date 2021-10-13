@@ -83,7 +83,7 @@ header ul {
 
 .nav-link-child {
   display: block;
-  padding: 0.8rem 1.5rem;
+  padding: 0.8rem 0.8rem;
   color: var(--main-color_black);
 }
 

@@ -1,0 +1,16 @@
+{
+	"apiVersion": 2,
+	"name": "create-block/text-block-small-list-2",
+	"version": "0.1.0",
+	"title": "Text Block Small List 2",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Example block written with ESNext standard and JSX support – build step required.",
+	"supports": {
+		"html": false
+	},
+	"textdomain": "text-block-small-list-2",
+	"editorScript": "file:./build/index.js",
+	"editorStyle": "file:./build/index.css",
+	"style": "file:./build/style-index.css"
+}
