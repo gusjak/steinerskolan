@@ -59,12 +59,12 @@ function Edit() {
     class: "secondary-header"
   }, "F\xF6lj oss p\xE5 instagram"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     class: "tagembed-container",
-    style: " width:1200px;height:500px;overflow: auto;"
+    style: "width: 100%; height: 100%; overflow: auto"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
     class: "tagembed-socialwall",
     "data-wall-id": "14022",
     "view-url": "https://widget.tagembed.com/14022?view"
-  }, " "), " ", (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("script", {
+  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("script", {
     src: "//widget.tagembed.com/embed.min.js",
     type: "text/javascript"
   })));

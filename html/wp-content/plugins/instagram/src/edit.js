@@ -35,15 +35,13 @@ export default function Edit() {
 			<h2 class="secondary-header">Följ oss på instagram</h2>
 			<div
 				class="tagembed-container"
-				style=" width:1200px;height:500px;overflow: auto;"
+				style="width: 100%; height: 100%; overflow: auto"
 			>
 				<div
 					class="tagembed-socialwall"
 					data-wall-id="14022"
 					view-url="https://widget.tagembed.com/14022?view"
-				>
-					{" "}
-				</div>{" "}
+				></div>
 				<script
 					src="//widget.tagembed.com/embed.min.js"
 					type="text/javascript"
