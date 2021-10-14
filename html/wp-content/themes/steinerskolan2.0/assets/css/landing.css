@@ -7,6 +7,13 @@
   padding: 0 10vw;
 }
 
+.hero-section .hero-top-title,
+.hero-section .hero-bottom-title {
+  width: 800px;
+  font-size: 5rem;
+  font-weight: 700;
+}
+
 .hero-section p {
   font-size: 1.25rem;
   margin: 2rem 0;
@@ -21,12 +28,40 @@
     padding: 0 5vw;
   }
 
+  .hero-section .hero-top-title {
+    font-weight: 400;
+  }
+
+  .hero-section .hero-bottom-title {
+    margin-bottom: -5px;
+  }
+
+  .hero-section .hero-top-title,
+  .hero-section .hero-bottom-title {
+    font-size: 2rem;
+  }
+
   .hero-section .hero-button {
     margin: 5px;
   }
 
   .hero-section p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .hero-section .hero-top-title {
+    font-weight: 300;
+  }
+
+  .hero-section .hero-bottom-title {
+    margin-bottom: -5px;
+  }
+
+  .hero-section .hero-top-title,
+  .hero-section .hero-bottom-title {
+    font-size: 4rem;
   }
 }
 
