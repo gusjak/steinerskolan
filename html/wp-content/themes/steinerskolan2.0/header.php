@@ -71,6 +71,6 @@
 
     </header>
 
-    <img src="http://localhost:8000/wp-content/uploads/2021/10/gradient-bg-1.png" class="background-blob" />
+    <img src="http://164.90.221.71/wp-content/uploads/2021/10/gradient-bg-1.png" class="background-blob" />
 
     <main>
