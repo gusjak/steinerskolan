@@ -48,7 +48,7 @@ export default function Edit({ attributes, setAttributes }) {
 				{/* 1 */}
 				<div className="drop-down-bar-waldorf-1">
 					<div className="colored-edge-1"></div>
-					<h3 className="third-header">En tolvårig plan för lärandet</h3>
+					<h3 className="third-header">Lärandeplan</h3>
 					<Button className="drop-down-button-1"></Button>
 				</div>
 				<div className="drop-down-content-box-waldorf-1">
@@ -67,9 +67,7 @@ export default function Edit({ attributes, setAttributes }) {
 				{/* 2 */}
 				<div className="drop-down-bar-waldorf-2">
 					<div className="colored-edge-2"></div>
-					<h3 className="third-header">
-						Trygghet och kontinuitet: Klasslärarens roll
-					</h3>
+					<h3 className="third-header">Trygghet</h3>
 					<Button className="drop-down-button-2"></Button>
 				</div>
 				<div className="drop-down-content-box-waldorf-2">
@@ -107,7 +105,7 @@ export default function Edit({ attributes, setAttributes }) {
 				{/* 4 */}
 				<div className="drop-down-bar-waldorf-4">
 					<div className="colored-edge-4"></div>
-					<h3 className="third-header">Arbetsbok istället för lärobok</h3>
+					<h3 className="third-header">Arbetsbok</h3>
 					<Button className="drop-down-button-4"></Button>
 				</div>
 				<div className="drop-down-content-box-waldorf-4">
@@ -126,7 +124,7 @@ export default function Edit({ attributes, setAttributes }) {
 				{/* 5 */}
 				<div className="drop-down-bar-waldorf-5">
 					<div className="colored-edge-5"></div>
-					<h3 className="third-header"> Periodundervisning</h3>
+					<h3 className="third-header">Periodundervisning</h3>
 					<Button className="drop-down-button-5"></Button>
 				</div>
 				<div className="drop-down-content-box-waldorf-5">
@@ -183,7 +181,7 @@ export default function Edit({ attributes, setAttributes }) {
 				{/* 8 */}
 				<div className="drop-down-bar-waldorf-8">
 					<div className="colored-edge-8"></div>
-					<h3 className="third-header">Läsårsbrev/Betyg</h3>
+					<h3 className="third-header">Läsårsbrev</h3>
 					<Button className="drop-down-button-8"></Button>
 				</div>
 				<div className="drop-down-content-box-waldorf-8">
@@ -221,7 +219,7 @@ export default function Edit({ attributes, setAttributes }) {
 				{/* 10 */}
 				<div className="drop-down-bar-waldorf-10">
 					<div className="colored-edge-10"></div>
-					<h3 className="third-header">Lärandet – en process</h3>
+					<h3 className="third-header">Lärandeprocessen</h3>
 					<Button className="drop-down-button-10"></Button>
 				</div>
 				<div className="drop-down-content-box-waldorf-10">

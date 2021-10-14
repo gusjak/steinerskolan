@@ -69,17 +69,14 @@ export default function save({ attributes }) {
 			<div className="cards-wrapper">
 				<div className="card-1">
 					{imageOne(attributes.imageUrlOne, attributes.imageAltOne)}
-					<h3 className="third-header">{attributes.cardTitleOne}</h3>
 				</div>
 
 				<div className="card-2">
 					{imageTwo(attributes.imageUrlTwo, attributes.imageAltTwo)}
-					<h3 className="third-header">{attributes.cardTitleTwo}</h3>
 				</div>
 
 				<div className="card-3">
 					{imageThree(attributes.imageUrlThree, attributes.imageAltThree)}
-					<h3 className="third-header">{attributes.cardTitleThree}</h3>
 				</div>
 			</div>
 		</section>

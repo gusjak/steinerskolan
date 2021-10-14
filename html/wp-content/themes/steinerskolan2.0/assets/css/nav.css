@@ -216,7 +216,7 @@ header ul {
     display: flex;
   }
 
-  .apply {
+  .apply-button {
     height: 40px;
     width: 110px;
     margin: 1.5rem 1.8rem;

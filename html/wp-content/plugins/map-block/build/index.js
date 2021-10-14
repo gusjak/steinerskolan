@@ -18,9 +18,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _wordpress_i18n__WEBPACK_IMPORTED_MODULE_1___default = /*#__PURE__*/__webpack_require__.n(_wordpress_i18n__WEBPACK_IMPORTED_MODULE_1__);
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @wordpress/block-editor */ "@wordpress/block-editor");
 /* harmony import */ var _wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @wordpress/components */ "@wordpress/components");
-/* harmony import */ var _wordpress_components__WEBPACK_IMPORTED_MODULE_3___default = /*#__PURE__*/__webpack_require__.n(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__);
-/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./editor.scss */ "./src/editor.scss");
+/* harmony import */ var _editor_scss__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./editor.scss */ "./src/editor.scss");
 
 
 /**
@@ -35,7 +33,6 @@ __webpack_require__.r(__webpack_exports__);
  *
  * @see https://developer.wordpress.org/block-editor/packages/packages-block-editor/#useBlockProps
  */
-
 
 
 /**
@@ -55,123 +52,20 @@ __webpack_require__.r(__webpack_exports__);
  * @return {WPElement} Element to render.
  */
 
-function Edit({
-  attributes,
-  setAttributes
-}) {
-  const getImageButtonOne = openEventOne => {
-    if (attributes.imageUrlOne) {
-      return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-        src: attributes.imageUrlOne,
-        onClick: openEventOne,
-        className: "card-image-1"
-      });
-    } else {
-      return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-        className: "button-container"
-      }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Button, {
-        onClick: openEventOne,
-        className: "button button-large"
-      }, "Pick an image"));
-    }
-  };
-
-  const getImageButtonTwo = openEventTwo => {
-    if (attributes.imageUrlTwo) {
-      return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-        src: attributes.imageUrlTwo,
-        onClick: openEventTwo,
-        className: "card-image-2"
-      });
-    } else {
-      return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-        className: "button-container"
-      }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Button, {
-        onClick: openEventTwo,
-        className: "button button-large"
-      }, "Pick an image"));
-    }
-  };
-
-  const getImageButtonThree = openEventThree => {
-    if (attributes.imageUrlThree) {
-      return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-        src: attributes.imageUrlThree,
-        onClick: openEventThree,
-        className: "card-image-3"
-      });
-    } else {
-      return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-        className: "button-container"
-      }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_components__WEBPACK_IMPORTED_MODULE_3__.Button, {
-        onClick: openEventThree,
-        className: "button button-large"
-      }, "Pick an image"));
-    }
-  };
-
-  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
-    key: "editable",
-    tagname: "h2",
-    placeholder: "Section Title",
-    value: attributes.title,
-    onChange: newTitle => setAttributes({
-      title: newTitle
-    }),
-    className: "secondary-header"
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.RichText, {
-    key: "editable",
-    tagname: "p",
-    placeholder: "Section Text",
-    value: attributes.body,
-    onChange: newBody => setAttributes({
-      body: newBody
-    }),
-    className: "body-text"
-  }), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "cards-wrapper"
+function Edit() {
+  return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", (0,_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.useBlockProps)(), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    class: "mapouter"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "card-1"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUpload, {
-    onSelect: media => {
-      setAttributes({
-        imageAltOne: media.alt,
-        imageUrlOne: media.url
-      });
-    },
-    type: "image",
-    value: attributes.imageID,
-    render: ({
-      open
-    }) => getImageButtonOne(open)
-  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "card-2"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUpload, {
-    onSelect: media => {
-      setAttributes({
-        imageAltTwo: media.alt,
-        imageUrlTwo: media.url
-      });
-    },
-    type: "image",
-    value: attributes.imageID,
-    render: ({
-      open
-    }) => getImageButtonTwo(open)
-  })), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "card-3"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)(_wordpress_block_editor__WEBPACK_IMPORTED_MODULE_2__.MediaUpload, {
-    onSelect: media => {
-      setAttributes({
-        imageAltThree: media.alt,
-        imageUrlThree: media.url
-      });
-    },
-    type: "image",
-    value: attributes.imageID,
-    render: ({
-      open
-    }) => getImageButtonThree(open)
+    class: "gmap_canvas"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("iframe", {
+    width: "600",
+    height: "500",
+    id: "gmap_canvas",
+    src: "https://maps.google.com/maps?q=tallh%C3%B6jdsgatan,%201&t=k&z=13&ie=UTF8&iwloc=&output=embed",
+    frameborder: "0",
+    scrolling: "no",
+    marginheight: "0",
+    marginwidth: "0"
   }))));
 }
 
@@ -216,42 +110,7 @@ __webpack_require__.r(__webpack_exports__);
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
 
-(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)("create-block/carousel-small", {
-  attributes: {
-    title: {
-      type: "string",
-      selector: "h2"
-    },
-    body: {
-      type: "string",
-      selector: "p"
-    },
-    imageUrlOne: {
-      attribute: "src",
-      selector: "card-image-1"
-    },
-    imageAltOne: {
-      attribute: "alt",
-      selector: "card-image-1"
-    },
-    imageUrlTwo: {
-      attribute: "src",
-      selector: "card-image-2"
-    },
-    imageAltTwo: {
-      attribute: "alt",
-      selector: "card-image-2"
-    },
-    imageUrlThree: {
-      attribute: "src",
-      selector: "card-image-3"
-    },
-    imageAltThree: {
-      attribute: "alt",
-      selector: "card-image-3"
-    }
-  },
-
+(0,_wordpress_blocks__WEBPACK_IMPORTED_MODULE_0__.registerBlockType)('create-block/map-block', {
   /**
    * @see ./edit.js
    */
@@ -307,84 +166,29 @@ __webpack_require__.r(__webpack_exports__);
  * @return {WPElement} Element to render.
  */
 
-function save({
-  attributes
-}) {
-  const imageOne = (srcOne, altOne) => {
-    if (!srcOne) return null;
-
-    if (altOne) {
-      return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-        className: "card-image-1",
-        src: srcOne,
-        alt: altOne
-      });
-    } // if no alt selected
-
-
-    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-      className: "card-image-1",
-      src: srcOne,
-      alt: "",
-      "aria-hidden": "true"
-    });
-  };
-
-  const imageTwo = (srcTwo, altTwo) => {
-    if (!srcTwo) return null;
-
-    if (altTwo) {
-      return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-        className: "card-image-2",
-        src: srcTwo,
-        alt: altTwo
-      });
-    } // if no alt selected
-
-
-    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-      className: "card-image-2",
-      src: srcTwo,
-      alt: "",
-      "aria-hidden": "true"
-    });
-  };
-
-  const imageThree = (srcThree, altThree) => {
-    if (!srcThree) return null;
-
-    if (altThree) {
-      return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-        className: "card-image-3",
-        src: srcThree,
-        alt: altThree
-      });
-    } // if no alt selected
-
-
-    return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("img", {
-      className: "card-image-3",
-      src: srcThree,
-      alt: "",
-      "aria-hidden": "true"
-    });
-  };
-
+function save() {
   return (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("section", {
-    className: "cards-section"
-  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h2", {
-    className: "secondary-header"
-  }, attributes.title), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", {
-    className: "body-text"
-  }, attributes.body), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "cards-wrapper"
+    class: "contact-section"
   }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "card-1"
-  }, imageOne(attributes.imageUrlOne, attributes.imageAltOne)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "card-2"
-  }, imageTwo(attributes.imageUrlTwo, attributes.imageAltTwo)), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
-    className: "card-3"
-  }, imageThree(attributes.imageUrlThree, attributes.imageAltThree))));
+    className: "contact-wrapper"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("h2", {
+    class: "secondary-header"
+  }, "Hitta hit!"), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "top-box"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "top-left-box"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, "Rudolf Steinerskolan \xE4r bel\xE4gen p\xE5 en h\xF6jd med underbar utsikt \xF6ver staden. Runtom finns tallskog och bergsknallar, h\xE4r kan man tidiga morgnar st\xF6ta p\xE5 harar och r\xE5djur. Skolg\xE5rden \xE4r naturligt bel\xE4gen i denna milj\xF6. Skolan \xE4r liten och trivsam, med elever fr\xE5n i f\xF6rskoleklassen och f\xF6rsta klass till klass nio, och ett fritidshem i Gula Villan, fritidshemmet \xE4r vackert bel\xE4gen i Renstr\xF6mska parken."), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("p", null, "L\xE4ttast tar du dig hit med buss 17 som har slutstation \xD6stra Sjukhuset. H\xE5llplatsen d\xE4r ni stiger av heter: Bovallstrandsgatan. Fr\xE5n denna g\xE5r ni upp mot Tallh\xF6jdsgatan, en g\xE5ngstr\xE4cka p\xE5 ca 400 m.")), (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    className: "top-right-box"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    class: "mapouter"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("div", {
+    class: "gmap_canvas"
+  }, (0,_wordpress_element__WEBPACK_IMPORTED_MODULE_0__.createElement)("iframe", {
+    id: "gmap_canvas",
+    src: "https://maps.google.com/maps?q=tallh%C3%B6jdsgatan,%201&t=k&z=13&ie=UTF8&iwloc=&output=embed",
+    frameborder: "0",
+    scrolling: "no"
+  })))))));
 }
 
 /***/ }),
@@ -430,16 +234,6 @@ module.exports = window["wp"]["blockEditor"];
 /***/ (function(module) {
 
 module.exports = window["wp"]["blocks"];
-
-/***/ }),
-
-/***/ "@wordpress/components":
-/*!************************************!*\
-  !*** external ["wp","components"] ***!
-  \************************************/
-/***/ (function(module) {
-
-module.exports = window["wp"]["components"];
 
 /***/ }),
 
@@ -618,7 +412,7 @@ module.exports = window["wp"]["i18n"];
 /******/ 			return __webpack_require__.O(result);
 /******/ 		}
 /******/ 		
-/******/ 		var chunkLoadingGlobal = self["webpackChunkcarousel_small"] = self["webpackChunkcarousel_small"] || [];
+/******/ 		var chunkLoadingGlobal = self["webpackChunkmap_block"] = self["webpackChunkmap_block"] || [];
 /******/ 		chunkLoadingGlobal.forEach(webpackJsonpCallback.bind(null, 0));
 /******/ 		chunkLoadingGlobal.push = webpackJsonpCallback.bind(null, chunkLoadingGlobal.push.bind(chunkLoadingGlobal));
 /******/ 	}();

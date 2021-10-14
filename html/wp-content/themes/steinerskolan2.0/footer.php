@@ -30,8 +30,12 @@
         </div>
         <div class="footerSocials">
             <h3>Sociala medier</h3>
-            <p>Instagram</p>
-            <p>Facebook</p>
+            <a href="https://www.instagram.com/rudolfsteinerskolangoteborg/?hl=en">
+                <p>Instagram</p>
+            </a>
+            <a href="https://sv-se.facebook.com/rudolfsteinerskolanGBGsforaldraforening/">
+                <p>Facebook</p>
+            </a>
         </div>
     </div>
 </footer>

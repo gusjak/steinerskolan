@@ -3,7 +3,7 @@
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
-import { registerBlockType } from "@wordpress/blocks";
+import { registerBlockType } from '@wordpress/blocks';
 
 /**
  * Lets webpack process CSS, SASS or SCSS files referenced in JavaScript files.
@@ -12,54 +12,20 @@ import { registerBlockType } from "@wordpress/blocks";
  *
  * @see https://www.npmjs.com/package/@wordpress/scripts#using-css
  */
-import "./style.scss";
+import './style.scss';
 
 /**
  * Internal dependencies
  */
-import Edit from "./edit";
-import save from "./save";
+import Edit from './edit';
+import save from './save';
 
 /**
  * Every block starts by registering a new block type definition.
  *
  * @see https://developer.wordpress.org/block-editor/reference-guides/block-api/block-registration/
  */
-registerBlockType("create-block/carousel-small", {
-	attributes: {
-		title: {
-			type: "string",
-			selector: "h2",
-		},
-		body: {
-			type: "string",
-			selector: "p",
-		},
-		imageUrlOne: {
-			attribute: "src",
-			selector: "card-image-1",
-		},
-		imageAltOne: {
-			attribute: "alt",
-			selector: "card-image-1",
-		},
-		imageUrlTwo: {
-			attribute: "src",
-			selector: "card-image-2",
-		},
-		imageAltTwo: {
-			attribute: "alt",
-			selector: "card-image-2",
-		},
-		imageUrlThree: {
-			attribute: "src",
-			selector: "card-image-3",
-		},
-		imageAltThree: {
-			attribute: "alt",
-			selector: "card-image-3",
-		},
-	},
+registerBlockType( 'create-block/map-block', {
 	/**
 	 * @see ./edit.js
 	 */
@@ -69,4 +35,4 @@ registerBlockType("create-block/carousel-small", {
 	 * @see ./save.js
 	 */
 	save,
-});
+} );

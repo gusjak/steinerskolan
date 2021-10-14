@@ -90,3 +90,69 @@
   padding: 32px;
   letter-spacing: 0.02em;
 }
+
+@media only screen and (max-width: 600px) {
+  .drop-down-bar-waldorf-1,
+  .drop-down-bar-waldorf-2,
+  .drop-down-bar-waldorf-3,
+  .drop-down-bar-waldorf-4,
+  .drop-down-bar-waldorf-5,
+  .drop-down-bar-waldorf-6,
+  .drop-down-bar-waldorf-7,
+  .drop-down-bar-waldorf-8,
+  .drop-down-bar-waldorf-9,
+  .drop-down-bar-waldorf-10 {
+    height: 50px;
+  }
+
+  .drop-down-section .drop-down-button-1,
+  .drop-down-section .drop-down-button-2,
+  .drop-down-section .drop-down-button-3,
+  .drop-down-section .drop-down-button-4,
+  .drop-down-section .drop-down-button-5,
+  .drop-down-section .drop-down-button-6,
+  .drop-down-section .drop-down-button-7,
+  .drop-down-section .drop-down-button-8,
+  .drop-down-section .drop-down-button-9,
+  .drop-down-section .drop-down-button-10 {
+    height: 40px;
+    width: 40px;
+  }
+
+  .drop-down-content-box-waldorf-1,
+  .drop-down-content-box-waldorf-2,
+  .drop-down-content-box-waldorf-3,
+  .drop-down-content-box-waldorf-4,
+  .drop-down-content-box-waldorf-5,
+  .drop-down-content-box-waldorf-6,
+  .drop-down-content-box-waldorf-7,
+  .drop-down-content-box-waldorf-8,
+  .drop-down-content-box-waldorf-9,
+  .drop-down-content-box-waldorf-10 {
+    border: 0.5px solid var(--main-color_black);
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    display: none;
+  }
+
+  .drop-down-content-box-waldorf-1 p,
+  .drop-down-content-box-waldorf-2 p,
+  .drop-down-content-box-waldorf-3 p,
+  .drop-down-content-box-waldorf-4 p,
+  .drop-down-content-box-waldorf-5 p,
+  .drop-down-content-box-waldorf-6 p,
+  .drop-down-content-box-waldorf-7 p,
+  .drop-down-content-box-waldorf-8 p,
+  .drop-down-content-box-waldorf-9 p,
+  .drop-down-content-box-waldorf-10 p {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 160%;
+    padding: 32px;
+    letter-spacing: 0.02em;
+  }
+}

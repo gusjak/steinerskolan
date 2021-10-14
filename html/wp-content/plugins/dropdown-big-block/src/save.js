@@ -33,7 +33,7 @@ export default function save({ attributes }) {
 				{/* 1 */}
 				<div className="drop-down-bar-waldorf-1">
 					<div className="colored-edge-1"></div>
-					<h3 className="third-header">En tolvårig plan för lärandet</h3>
+					<h3 className="third-header">Lärandeplan</h3>
 					<button className="drop-down-button-1"></button>
 				</div>
 
@@ -44,9 +44,7 @@ export default function save({ attributes }) {
 				{/* 2 */}
 				<div className="drop-down-bar-waldorf-2">
 					<div className="colored-edge-2"></div>
-					<h3 className="third-header">
-						Trygghet och kontinuitet: Klasslärarens roll
-					</h3>
+					<h3 className="third-header">Trygghet</h3>
 					<button className="drop-down-button-2"></button>
 				</div>
 
@@ -68,7 +66,7 @@ export default function save({ attributes }) {
 				{/* 4 */}
 				<div className="drop-down-bar-waldorf-4">
 					<div className="colored-edge-4"></div>
-					<h3 className="third-header">Arbetsbok istället för lärobok</h3>
+					<h3 className="third-header">Arbetsbok</h3>
 					<button className="drop-down-button-4"></button>
 				</div>
 
@@ -79,7 +77,7 @@ export default function save({ attributes }) {
 				{/* 5 */}
 				<div className="drop-down-bar-waldorf-5">
 					<div className="colored-edge-5"></div>
-					<h3 className="third-header"> Periodundervisning</h3>
+					<h3 className="third-header">Periodundervisning</h3>
 					<button className="drop-down-button-5"></button>
 				</div>
 
@@ -101,7 +99,7 @@ export default function save({ attributes }) {
 				{/* 7 */}
 				<div className="drop-down-bar-waldorf-7">
 					<div className="colored-edge-7"></div>
-					<h3 className="third-header">Språkundervisning</h3>
+					<h3 className="third-header">Religionsundervisning</h3>
 					<button className="drop-down-button-7"></button>
 				</div>
 
@@ -112,7 +110,7 @@ export default function save({ attributes }) {
 				{/* 8 */}
 				<div className="drop-down-bar-waldorf-8">
 					<div className="colored-edge-8"></div>
-					<h3 className="third-header">Läsårsbrev/Betyg</h3>
+					<h3 className="third-header">Läsårsbrev</h3>
 					<button className="drop-down-button-8"></button>
 				</div>
 
@@ -134,7 +132,7 @@ export default function save({ attributes }) {
 				{/* 10 */}
 				<div className="drop-down-bar-waldorf-10">
 					<div className="colored-edge-10"></div>
-					<h3 className="third-header">Lärandet – en process</h3>
+					<h3 className="third-header">Lärandeprocessen</h3>
 					<button className="drop-down-button-10"></button>
 				</div>
 

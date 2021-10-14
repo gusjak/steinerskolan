@@ -1,5 +1,7 @@
 .text-section {
   margin: 20vh 20vw;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
 .text-section h2,
@@ -29,7 +31,22 @@
   margin-top: 2.5rem;
 }
 
+@media only screen and (max-width: 600px) {
+  .text-section {
+    margin: 10vh 5vw;
+    margin-top: 15vh;
+    margin-bottom: 5vh;
+  }
+
+  .text-section h2 {
+    font-size: 2rem;
+  }
+}
+
+/* PINK THINGIE SECTION */
+
 .pink-box-section {
+  margin-top: 5vh;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -87,6 +104,27 @@
   font-size: 20px;
   line-height: 150%;
 }
+
+@media only screen and (max-width: 600px) {
+  .pink-box-wrapper {
+    flex-direction: column;
+  }
+
+  .pink-box-1,
+  .pink-box-2,
+  .pink-box-3 {
+    height: 150px;
+    width: 300px;
+  }
+
+  .white-section {
+    height: 120px;
+    width: 300px;
+    margin-bottom: 2vh;
+  }
+}
+
+/* DROPPU DOWNU */
 
 .drop-down-bar-about-1,
 .drop-down-bar-about-2,
@@ -151,4 +189,50 @@
   line-height: 160%;
   padding: 32px;
   letter-spacing: 0.02em;
+}
+
+@media only screen and (max-width: 600px) {
+  .drop-down-bar-about-1,
+  .drop-down-bar-about-2,
+  .drop-down-bar-about-3,
+  .drop-down-bar-about-4,
+  .drop-down-bar-about-5,
+  .drop-down-bar-about-6,
+  .drop-down-bar-about-7,
+  .drop-down-bar-about-8,
+  .drop-down-bar-about-9 {
+    height: 50px;
+  }
+
+  .drop-down-content-box-about-1 p,
+  .drop-down-content-box-about-2 p,
+  .drop-down-content-box-about-3 p,
+  .drop-down-content-box-about-4 p,
+  .drop-down-content-box-about-5 p,
+  .drop-down-content-box-about-6 p,
+  .drop-down-content-box-about-7 p,
+  .drop-down-content-box-about-8 p,
+  .drop-down-content-box-about-9 p {
+    font-size: 14px;
+    line-height: 160%;
+    padding: 20px;
+    letter-spacing: 0.02em;
+  }
+
+  .drop-down-button-1,
+  .drop-down-button-2,
+  .drop-down-button-3,
+  .drop-down-button-4,
+  .drop-down-button-5,
+  .drop-down-button-6,
+  .drop-down-button-7,
+  .drop-down-button-8,
+  .drop-down-button-9 {
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 15px;
+    border: 0.5px solid var(--main-color_black);
+  }
 }

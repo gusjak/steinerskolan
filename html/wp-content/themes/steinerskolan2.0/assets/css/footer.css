@@ -43,3 +43,39 @@ footer a:hover {
   margin: 20px;
   margin-top: 75px;
 }
+
+@media only screen and (max-width: 600px) {
+  footer {
+    height: 80vh;
+    margin-top: 10vh;
+  }
+  .footerContentWrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footerContact,
+  .footerAddress,
+  .footerAbout,
+  .footerSocials {
+    margin-top: 5px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  footer {
+    height: 60vh;
+    margin-top: 2vh;
+  }
+  .footerContentWrapper {
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .footerContact,
+  .footerAddress,
+  .footerAbout,
+  .footerSocials {
+    margin-top: 10px;
+  }
+}

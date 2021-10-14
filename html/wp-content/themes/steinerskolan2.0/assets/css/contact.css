@@ -1,16 +1,17 @@
 .contact-section {
+  height: 80vh;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.contactWrapper {
+.contact-wrapper {
   width: 1150px;
-
   display: flex;
   flex-direction: column;
   justify-content: center;
 }
+
 .top-box,
 .middle-box,
 .bottom-box {
@@ -19,6 +20,7 @@
   margin-top: 20px;
   margin-bottom: 20px;
 }
+
 .top-left-box,
 .top-right-box,
 .middle-left-box,
@@ -36,4 +38,128 @@
   margin-bottom: 20px;
   border-bottom: 2px solid black;
   width: 170px;
+}
+
+iframe {
+  object-fit: cover;
+  margin-bottom: 5vh;
+}
+
+#gmap_canvas {
+  width: 100%;
+  height: 240px;
+  margin-top: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .contact-section {
+    height: auto;
+    width: 330px;
+  }
+  .top-box,
+  .middle-box,
+  .bottom-box {
+    flex-direction: column;
+    margin-bottom: 10px;
+    justify-content: space-evenly;
+  }
+
+  .contact-section h2 {
+    font-size: 40px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
+
+  .contact-section h4 {
+    margin-bottom: 1px;
+  }
+
+  .contact-section p {
+    margin-bottom: 3px;
+    font-size: 0.9rem;
+    margin-bottom: 4px;
+  }
+
+  .top-left-box,
+  .top-right-box,
+  .middle-left-box,
+  .middle-right-box,
+  .bottom-left-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 138px;
+    margin: 20px;
+    margin-bottom: 15px;
+    max-width: 100%;
+  }
+
+  .top-box .top-left-box,
+  .top-box .top-right-box {
+    height: 50%;
+    width: 100%;
+  }
+  .top-box .top-left-box {
+    margin-bottom: 2px;
+  }
+  .top-box .top-right-box {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .contact-section {
+    height: auto;
+    width: 100%;
+  }
+  .top-box,
+  .middle-box,
+  .bottom-box {
+    flex-direction: column;
+    margin-bottom: 10px;
+    justify-content: space-evenly;
+  }
+
+  .contact-section h2 {
+    font-size: 60px;
+    margin-left: 20px;
+    margin-bottom: 5px;
+  }
+
+  .contact-section h4 {
+    margin-bottom: 5px;
+    font-size: 1.8rem;
+  }
+
+  .contact-section p {
+    margin-bottom: 3px;
+    font-size: 1.4rem;
+    margin-bottom: 20px;
+  }
+
+  .top-left-box,
+  .top-right-box,
+  .middle-left-box,
+  .middle-right-box,
+  .bottom-left-box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 260px;
+    margin: 20px;
+    margin-bottom: 15px;
+    max-width: 100%;
+  }
+
+  .top-box .top-left-box,
+  .top-box .top-right-box {
+    height: 100%;
+    width: 100%;
+  }
+  .top-box .top-left-box {
+    margin-bottom: 2px;
+  }
+  .top-box .top-right-box {
+    margin-bottom: 40px;
+  }
 }

@@ -123,16 +123,6 @@ export default function Edit({ attributes, setAttributes }) {
 						value={attributes.imageID}
 						render={({ open }) => getImageButtonOne(open)}
 					/>
-					<RichText
-						key="editable"
-						tagname="h3"
-						placeholder="Card Title 1"
-						value={attributes.cardTitleOne}
-						onChange={(newcardTitleOne) =>
-							setAttributes({ cardTitleOne: newcardTitleOne })
-						}
-						className="third-header"
-					/>
 				</div>
 				{/* Card 2 */}
 				<div className="card-2">
@@ -143,16 +133,6 @@ export default function Edit({ attributes, setAttributes }) {
 						type="image"
 						value={attributes.imageID}
 						render={({ open }) => getImageButtonTwo(open)}
-					/>
-					<RichText
-						key="editable"
-						tagname="h3"
-						placeholder="Card Title 2"
-						value={attributes.cardTitleTwo}
-						onChange={(newcardTitleTwo) =>
-							setAttributes({ cardTitleTwo: newcardTitleTwo })
-						}
-						className="third-header"
 					/>
 				</div>
 				{/* Card 3 */}
@@ -167,16 +147,6 @@ export default function Edit({ attributes, setAttributes }) {
 						type="image"
 						value={attributes.imageID}
 						render={({ open }) => getImageButtonThree(open)}
-					/>
-					<RichText
-						key="editable"
-						tagname="h3"
-						placeholder="Card Title 3"
-						value={attributes.cardTitleThree}
-						onChange={(newcardTitleThree) =>
-							setAttributes({ cardTitleThree: newcardTitleThree })
-						}
-						className="third-header"
 					/>
 				</div>
 			</div>
